@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-fixed":"#23005c","inverse-on-surface":"#eef0ff","on-primary-fixed":"#07006c","inverse-primary":"#c0c1ff","tertiary":"#6b38d4","error":"#ba1a1a","surface-container":"#eaedff","surface-variant":"#dae2fd","on-secondary-fixed":"#001f26","on-tertiary-fixed-variant":"#5516be","tertiary-fixed-dim":"#d0bcff","surface-container-high":"#e2e7ff","surface-container-low":"#f2f3ff","on-tertiary":"#ffffff","on-primary":"#ffffff","primary":"#4648d4","primary-fixed-dim":"#c0c1ff","on-surface-variant":"#464554","surface-container-lowest":"#ffffff","surface":"#faf8ff","on-error-container":"#93000a","secondary":"#00687a","on-secondary-container":"#006172","on-secondary-fixed-variant":"#004e5c","surface-container-highest":"#dae2fd","inverse-surface":"#283044","outline":"#767586","surface-tint":"#494bd6","on-primary-fixed-variant":"#2f2ebe","outline-variant":"#c7c4d7","primary-fixed":"#e1e0ff","on-tertiary-container":"#fffbff","error-container":"#ffdad6","on-surface":"#131b2e","background":"#faf8ff","on-primary-container":"#fffbff","tertiary-fixed":"#e9ddff","secondary-container":"#57dffe","on-secondary":"#ffffff","surface-bright":"#faf8ff","on-error":"#ffffff","primary-container":"#6063ee","tertiary-container":"#8455ef","secondary-fixed-dim":"#4cd7f6","on-background":"#131b2e","surface-dim":"#d2d9f4","secondary-fixed":"#acedff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2rem",margin:"2rem","gutter-sm":"1rem","space-md":"1rem","margin-mobile":"1rem",gutter:"1.5rem","gutter-lg":"2rem","space-lg":"1.5rem"},fontFamily:{"headline-md":["Inter"],"label-md":["Inter"],"tabular-data":["Inter"],"title-md":["Inter"],"headline-lg-mobile":["Inter"],"label-sm":["Inter"],"body-md":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"display-hero":["Inter"],"display-hero-mobile":["Inter"],"headline-lg":["Inter"]},fontSize:{"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"tabular-data":["14px",{lineHeight:"20px",letterSpacing:"-0.01em",fontWeight:"500"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0em",fontWeight:"400"}],"display-hero":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"display-hero-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.025em",fontWeight:"700"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-inverse-surface text-inverse-on-surface z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-lg"><div class="flex items-center gap-space-sm mb-space-lg"><img alt="StudyFlow AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XWYugP77TaW7e-i5EP6HwsNo2FDOop-bVgu_1Z6eamqh-tYdEUGYw3tXowjm8LOlnop7WforM-6HcYF9HfHaSx-3Yj9-z16_hKieB8MupQj-MkqaXE2iauYHnBnTAFkvXZ2FC94DHR-oVqgoLZKzI91HJ_wGSjBOY8Bc2-mB5n34ZvZ9MRcnN5CIT_qy8Q9YsT6RCzNCYm7DuCBl7ZTnpuJXiSCpfxYsUgWZ4iItYFUoFPerHmENtlDfg"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-primary leading-tight">StudyFlow AI</span><span class="inline-block px-space-xs py-0.5 rounded text-[10px] uppercase font-bold tracking-wider bg-tertiary-container text-on-tertiary-container self-start mt-0.5">STUDENT PRO</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary text-on-primary font-title-md rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="dashboard" href="#/dashboard"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary text-on-primary font-title-md rounded-lg shadow-sm" data-path="study-planner" href="#/planner"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="font-body-md text-body-md">Study Planner</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="tasks-and-assignments" href="#/tasks"><span class="material-symbols-outlined text-[20px]">checklist</span><span class="font-body-md text-body-md">Tasks & Assignments</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="my-subjects" href="#/subjects"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-body-md text-body-md">My Subjects</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="focus-timer" href="#/focus"><span class="material-symbols-outlined text-[20px]">timer</span><span class="font-body-md text-body-md">Focus Timer</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="progress-analytics" href="#/analytics"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-body-md text-body-md">Progress Analytics</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="settings" href="#/settings"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md">Settings</span></a></nav></div><div class="p-space-lg flex flex-col gap-space-md"><div class="flex items-center justify-between px-space-md py-space-xs rounded-full bg-surface-variant/20"><span class="font-label-sm text-label-sm flex items-center gap-1.5 text-secondary-fixed-dim"><span class="text-[14px]">🔥</span> 14-day study streak</span><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-pulse"></span></div><div class="p-space-md rounded-xl bg-surface-variant/10 flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-outline-variant uppercase">Pomodoro</span><span class="font-tabular-data text-tabular-data text-on-primary font-bold">24:18 left</span></div><button class="w-8 h-8 rounded-lg bg-surface-variant/20 hover:bg-surface-variant hover:text-on-surface text-on-primary flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">pause</span></button></div><button class="w-full flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-xl bg-tertiary hover:bg-primary-container text-on-tertiary font-title-md text-title-md transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span>Ask StudyFlow AI</span></button><div class="pt-space-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBers2roXeDVcCAC3_mu0HYVYiHtA9SQjm_igBqbHuau5lrvF32UwHKUW5h5zUeeX7xU79mjnmc6TDyey-rf1jAlRG2Uju7GT1qaVL5M42RQOj51uk4Sxt8LAEYcP2p-YdGoCafzBnemkzpwg9D0L_jujfutRbkubw7_22MEcKKKKDnPCGvYVd4kCrf2Dfi8pTzOlWbW7yuPkFzXF-ZDruwIPMuFQ6_MvvAFReKve3s4XSQugbLHqShVg"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim ring-2 ring-inverse-surface"></span></div><div class="flex flex-col"><span class="font-body-sm text-body-sm text-on-primary font-semibold">Alex Chen</span><span class="font-label-sm text-label-sm text-outline-variant">BS CS, Year 3</span></div></div><a class="text-outline-variant hover:text-on-primary transition-colors" href="#/settings"><span class="material-symbols-outlined text-[20px]">tune</span></a></div></div></aside><div class="pl-64 min-h-screen flex flex-col"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl gap-space-lg"><div class="flex items-center flex-1 max-w-lg"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-space-xs rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search subjects, notes, upcoming assignments... Cmd+K" type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-primary">school</span><span>Spring 2025 Semester</span><span class="material-symbols-outlined text-[16px]">expand_more</span></div><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>New Study Session</span></button><button class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px] flex items-center justify-center leading-none font-bold">3</span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBers2roXeDVcCAC3_mu0HYVYiHtA9SQjm_igBqbHuau5lrvF32UwHKUW5h5zUeeX7xU79mjnmc6TDyey-rf1jAlRG2Uju7GT1qaVL5M42RQOj51uk4Sxt8LAEYcP2p-YdGoCafzBnemkzpwg9D0L_jujfutRbkubw7_22MEcKKKKDnPCGvYVd4kCrf2Dfi8pTzOlWbW7yuPkFzXF-ZDruwIPMuFQ6_MvvAFReKve3s4XSQugbLHqShVg"/></div></div></header><main class="w-full pt-16 bg-surface px-space-xl py-space-lg flex-1"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Level Header & Navigation Controls -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md tracking-wider uppercase mb-1">
+<span class="material-symbols-outlined text-[16px]">calendar_view_week</span>
+<span>Semester Academic Schedule</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Study Planner</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Organize your weekly learning blocks, exam prep sessions, and lab hours.</p>
+</div>
+<div class="flex items-center flex-wrap gap-space-sm">
+<!-- Week Navigator -->
+<div class="flex items-center bg-surface-container-low rounded-xl p-1 shadow-sm">
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-1 font-label-md text-label-md" id="prevWeekBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+<span class="hidden sm:inline">Prev Week</span>
+</button>
+<div class="px-space-md py-1 font-title-md text-title-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">event</span>
+<span id="dateRangeText">Feb 17 – Feb 23, 2025</span>
+</div>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-1 font-label-md text-label-md" id="nextWeekBtn" type="button">
+<span class="hidden sm:inline">Next Week</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<button class="px-space-md py-2 rounded-xl bg-surface-container-high hover:bg-surface-variant text-on-surface font-title-md text-title-md transition-all shadow-sm" type="button">
+          Today
+        </button>
+<button class="flex items-center gap-space-xs px-space-lg py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md transition-all shadow-md hover:shadow-lg" id="openScheduleModalBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Schedule Study Session</span>
+</button>
+</div>
+</div>
+<!-- Secondary Bar: View Selectors & Subject Filter Pills -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-2">
+<!-- Filter pills -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 lg:pb-0 scrollbar-none" id="subjectFilterContainer">
+<button class="filter-pill active px-3.5 py-1.5 rounded-full text-label-md font-label-md transition-all bg-primary text-on-primary shadow-sm flex items-center gap-1.5 whitespace-nowrap" data-filter="all" type="button">
+<span class="w-2 h-2 rounded-full bg-white"></span>
+          All Subjects
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full text-label-md font-label-md transition-all bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center gap-1.5 whitespace-nowrap" data-filter="ds" type="button">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+          Data Structures
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full text-label-md font-label-md transition-all bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center gap-1.5 whitespace-nowrap" data-filter="python" type="button">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+          Python Programming
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full text-label-md font-label-md transition-all bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center gap-1.5 whitespace-nowrap" data-filter="dbms" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          DBMS
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full text-label-md font-label-md transition-all bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center gap-1.5 whitespace-nowrap" data-filter="stats" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-variant"></span>
+          Statistics
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full text-label-md font-label-md transition-all bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center gap-1.5 whitespace-nowrap" data-filter="math" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+          Mathematics
+        </button>
+</div>
+<!-- View switcher -->
+<div class="flex items-center self-start lg:self-auto bg-surface-container-low p-1 rounded-xl shadow-sm">
+<button class="view-btn px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">view_week</span>
+          Week View
+        </button>
+<button class="view-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">view_day</span>
+          Day
+        </button>
+<button class="view-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">calendar_view_month</span>
+          Month
+        </button>
+<button class="view-btn px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">format_list_bulleted</span>
+          List
+        </button>
+</div>
+</div>
+</div>
+<!-- Primary Workspace Content (Grid + Contextual Right Rail) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Left Calendar Table (9 Columns on XL) -->
+<div class="xl:col-span-8 2xl:col-span-9 bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col">
+<!-- Days of Week Header Strip -->
+<div class="grid grid-cols-8 bg-surface-container-low text-on-surface-variant py-3 px-2 text-center items-center">
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Time (EST)</div>
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Mon</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">17</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tue</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">18</span>
+</div>
+<!-- Wednesday (Today) Marker -->
+<div class="flex flex-col items-center bg-primary/10 py-1 px-2 rounded-xl text-primary relative">
+<span class="font-label-sm text-label-sm font-bold uppercase flex items-center gap-1">
+            Wed <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+</span>
+<span class="font-headline-sm text-headline-sm font-bold">19</span>
+<span class="text-[9px] uppercase tracking-widest bg-primary text-on-primary px-1.5 rounded font-label-sm">Today</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Thu</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">20</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Fri</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">21</span>
+</div>
+<div class="flex flex-col items-center text-outline">
+<span class="font-label-sm text-label-sm uppercase">Sat</span>
+<span class="font-headline-sm text-headline-sm">22</span>
+</div>
+<div class="flex flex-col items-center text-outline">
+<span class="font-label-sm text-label-sm uppercase">Sun</span>
+<span class="font-headline-sm text-headline-sm">23</span>
+</div>
+</div>
+<!-- Calendar Body: 08:00 to 21:00 Hours -->
+<div class="relative max-h-[720px] overflow-y-auto divide-y-0" id="calendarGridBody">
+<!-- Grid Matrix Rows -->
+<div class="grid grid-cols-8 min-h-[780px] relative bg-surface-container-lowest">
+<!-- Column 0: Time Labels -->
+<div class="flex flex-col justify-between py-2 text-right pr-3 bg-surface-container-lowest select-none">
+<span class="font-label-sm text-label-sm text-outline">08:00 AM</span>
+<span class="font-label-sm text-label-sm text-outline">09:00 AM</span>
+<span class="font-label-sm text-label-sm text-outline">10:00 AM</span>
+<span class="font-label-sm text-label-sm text-outline">11:00 AM</span>
+<span class="font-label-sm text-label-sm text-outline">12:00 PM</span>
+<span class="font-label-sm text-label-sm text-outline">01:00 PM</span>
+<span class="font-label-sm text-label-sm text-outline">02:00 PM</span>
+<span class="font-label-sm text-label-sm text-outline">03:00 PM</span>
+<span class="font-label-sm text-label-sm text-outline">04:00 PM</span>
+<span class="font-label-sm text-label-sm text-outline">05:00 PM</span>
+<span class="font-label-sm text-label-sm text-outline">06:00 PM</span>
+<span class="font-label-sm text-label-sm text-outline">07:00 PM</span>
+<span class="font-label-sm text-label-sm text-outline">08:00 PM</span>
+<span class="font-label-sm text-label-sm text-outline">09:00 PM</span>
+</div>
+<!-- Column 1: Mon 17 -->
+<div class="relative p-1 bg-surface/30">
+<!-- 09:00 - 10:30 Data Structures -->
+<div class="session-block absolute left-1 right-1 top-[60px] h-[90px] rounded-xl p-2.5 bg-tertiary-fixed text-on-tertiary-fixed shadow-sm hover:shadow-md cursor-pointer transition-all flex flex-col justify-between overflow-hidden group" data-session-id="mon-1">
+<div>
+<div class="flex items-center justify-between text-[11px] font-label-sm text-tertiary">
+<span>09:00 - 10:30</span>
+<span class="bg-error-container text-on-error-container px-1 rounded text-[10px]">High</span>
+</div>
+<div class="font-title-md text-title-md truncate mt-0.5 leading-snug">Data Structures</div>
+<div class="text-[11px] font-body-sm text-on-tertiary-fixed-variant truncate">Algorithm Analysis</div>
+</div>
+<div class="flex items-center gap-1 text-[10px] font-label-sm opacity-80">
+<span class="material-symbols-outlined text-[13px]">school</span>
+<span>Lecture</span>
+</div>
+</div>
+<!-- 14:00 - 15:30 DBMS -->
+<div class="session-block absolute left-1 right-1 top-[360px] h-[90px] rounded-xl p-2.5 bg-secondary-fixed text-on-secondary-fixed shadow-sm hover:shadow-md cursor-pointer transition-all flex flex-col justify-between overflow-hidden" data-session-id="mon-2">
+<div>
+<div class="flex items-center justify-between text-[11px] font-label-sm text-secondary">
+<span>14:00 - 15:30</span>
+<span class="bg-secondary-fixed-dim text-on-secondary-fixed px-1 rounded text-[10px]">Lab</span>
+</div>
+<div class="font-title-md text-title-md truncate mt-0.5">DBMS</div>
+<div class="text-[11px] font-body-sm text-on-secondary-fixed-variant truncate">Normalization Lab</div>
+</div>
+<div class="flex items-center gap-1 text-[10px] font-label-sm opacity-80">
+<span class="material-symbols-outlined text-[13px]">terminal</span>
+<span>CS Lab 102</span>
+</div>
+</div>
+</div>
+<!-- Column 2: Tue 18 -->
+<div class="relative p-1 bg-surface-container-lowest">
+<!-- 10:00 - 11:30 Python -->
+<div class="session-block absolute left-1 right-1 top-[120px] h-[90px] rounded-xl p-2.5 bg-primary-fixed text-on-primary-fixed shadow-sm hover:shadow-md cursor-pointer transition-all flex flex-col justify-between overflow-hidden" data-session-id="tue-1">
+<div>
+<div class="flex items-center justify-between text-[11px] font-label-sm text-primary">
+<span>10:00 - 11:30</span>
+<span class="bg-surface-variant text-on-surface-variant px-1 rounded text-[10px]">Normal</span>
+</div>
+<div class="font-title-md text-title-md truncate mt-0.5">Python Programming</div>
+<div class="text-[11px] font-body-sm text-on-primary-fixed-variant truncate">Object Oriented OOP</div>
+</div>
+<div class="flex items-center gap-1 text-[10px] font-label-sm opacity-80">
+<span class="material-symbols-outlined text-[13px]">code</span>
+<span>Code Walkthrough</span>
+</div>
+</div>
+<!-- 15:00 - 17:00 Deep Work Focus Purple -->
+<div class="session-block absolute left-1 right-1 top-[420px] h-[120px] rounded-xl p-2.5 bg-tertiary-container text-on-tertiary-container shadow-sm hover:shadow-md cursor-pointer transition-all flex flex-col justify-between overflow-hidden" data-session-id="tue-2">
+<div>
+<div class="flex items-center justify-between text-[11px] font-label-sm text-on-tertiary-container">
+<span>15:00 - 17:00</span>
+<span class="bg-tertiary text-on-tertiary px-1 rounded text-[10px]">2h Sprint</span>
+</div>
+<div class="font-title-md text-title-md truncate mt-0.5">Deep Work Focus</div>
+<div class="text-[11px] font-body-sm text-tertiary-fixed truncate">DS Heap Assignment</div>
+</div>
+<div class="flex items-center gap-1 text-[10px] font-label-sm opacity-90">
+<span class="material-symbols-outlined text-[13px]">psychology</span>
+<span>Solo Deep Session</span>
+</div>
+</div>
+</div>
+<!-- Column 3: Wed 19 (TODAY) -->
+<div class="relative p-1 bg-surface-container-high/30">
+<!-- Current Time line indicator (at 16:15) -->
+<div class="absolute left-0 right-0 top-[495px] z-20 flex items-center pointer-events-none">
+<span class="w-2.5 h-2.5 rounded-full bg-error -ml-1"></span>
+<div class="h-0.5 w-full bg-error"></div>
+</div>
+<!-- 09:30 - 11:00 Data Structures (Done) -->
+<div class="session-block opacity-75 absolute left-1 right-1 top-[90px] h-[90px] rounded-xl p-2 bg-surface-container-high text-on-surface shadow-sm cursor-pointer hover:opacity-100 transition-all flex flex-col justify-between overflow-hidden" data-session-id="wed-1">
+<div>
+<div class="flex items-center justify-between text-[10px] font-label-sm text-on-surface-variant">
+<span>09:30 - 11:00</span>
+<span class="flex items-center text-primary"><span class="material-symbols-outlined text-[14px]">check_circle</span> Done</span>
+</div>
+<div class="font-title-md text-title-md truncate mt-0.5 line-through opacity-70">Data Structures</div>
+<div class="text-[11px] font-body-sm text-on-surface-variant truncate">Binary Search Trees</div>
+</div>
+<div class="text-[10px] font-label-sm text-on-surface-variant">Completed</div>
+</div>
+<!-- 13:00 - 14:30 DBMS (Done) -->
+<div class="session-block opacity-75 absolute left-1 right-1 top-[300px] h-[90px] rounded-xl p-2 bg-surface-container-high text-on-surface shadow-sm cursor-pointer hover:opacity-100 transition-all flex flex-col justify-between overflow-hidden" data-session-id="wed-2">
+<div>
+<div class="flex items-center justify-between text-[10px] font-label-sm text-on-surface-variant">
+<span>13:00 - 14:30</span>
+<span class="flex items-center text-primary"><span class="material-symbols-outlined text-[14px]">check_circle</span> Done</span>
+</div>
+<div class="font-title-md text-title-md truncate mt-0.5 line-through opacity-70">DBMS Review</div>
+<div class="text-[11px] font-body-sm text-on-surface-variant truncate">B+ Trees & Indexing</div>
+</div>
+<div class="text-[10px] font-label-sm text-on-surface-variant">Completed</div>
+</div>
+<!-- 15:30 - 17:00 Statistics (ACTIVE NOW - highlighted) -->
+<div class="session-block active-selected-session absolute left-1 right-1 top-[450px] h-[90px] rounded-xl p-2.5 bg-secondary-fixed text-on-secondary-fixed shadow-md ring-2 ring-primary cursor-pointer transition-all flex flex-col justify-between overflow-hidden z-10" data-session-id="wed-3">
+<div>
+<div class="flex items-center justify-between text-[11px] font-label-sm text-secondary">
+<span class="font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+                    15:30 - 17:00
+                  </span>
+<span class="bg-primary text-on-primary px-1.5 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider">Active Now</span>
+</div>
+<div class="font-title-md text-title-md font-bold truncate mt-0.5">Statistics MATH240</div>
+<div class="text-[11px] font-body-sm text-on-secondary-fixed-variant truncate">Bayes & Distributions</div>
+</div>
+<div class="flex items-center justify-between text-[10px] font-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">place</span> Hall 304</span>
+<span class="text-secondary font-bold">45m left</span>
+</div>
+</div>
+<!-- 18:30 - 20:00 Python Lab -->
+<div class="session-block absolute left-1 right-1 top-[630px] h-[90px] rounded-xl p-2.5 bg-primary-fixed text-on-primary-fixed shadow-sm hover:shadow-md cursor-pointer transition-all flex flex-col justify-between overflow-hidden" data-session-id="wed-4">
+<div>
+<div class="flex items-center justify-between text-[11px] font-label-sm text-primary">
+<span>18:30 - 20:00</span>
+<span class="bg-surface-variant text-on-surface-variant px-1 rounded text-[10px]">Coding</span>
+</div>
+<div class="font-title-md text-title-md truncate mt-0.5">Python Lab</div>
+<div class="text-[11px] font-body-sm text-on-primary-fixed-variant truncate">AsyncIO & Threading</div>
+</div>
+<div class="flex items-center gap-1 text-[10px] font-label-sm opacity-80">
+<span class="material-symbols-outlined text-[13px]">group</span>
+<span>Pair Programming</span>
+</div>
+</div>
+</div>
+<!-- Column 4: Thu 20 -->
+<div class="relative p-1 bg-surface-container-lowest">
+<!-- 11:00 - 12:30 Discrete Math -->
+<div class="session-block absolute left-1 right-1 top-[180px] h-[90px] rounded-xl p-2.5 bg-surface-container-high text-on-surface shadow-sm hover:shadow-md cursor-pointer transition-all flex flex-col justify-between overflow-hidden" data-session-id="thu-1">
+<div>
+<div class="flex items-center justify-between text-[11px] font-label-sm text-outline">
+<span>11:00 - 12:30</span>
+<span class="bg-surface-container-highest px-1 rounded text-[10px]">Math</span>
+</div>
+<div class="font-title-md text-title-md truncate mt-0.5">Discrete Math</div>
+<div class="text-[11px] font-body-sm text-on-surface-variant truncate">Graph Theory & Euler Paths</div>
+</div>
+<div class="flex items-center gap-1 text-[10px] font-label-sm opacity-80">
+<span class="material-symbols-outlined text-[13px]">menu_book</span>
+<span>Theory Revision</span>
+</div>
+</div>
+<!-- 16:00 - 18:00 Midterm Review Session -->
+<div class="session-block absolute left-1 right-1 top-[480px] h-[120px] rounded-xl p-2.5 bg-error-container text-on-error-container shadow-sm hover:shadow-md cursor-pointer transition-all flex flex-col justify-between overflow-hidden" data-session-id="thu-2">
+<div>
+<div class="flex items-center justify-between text-[11px] font-label-sm text-error">
+<span>16:00 - 18:00</span>
+<span class="bg-error text-on-error px-1.5 py-0.2 rounded text-[10px] font-bold">Urgent</span>
+</div>
+<div class="font-title-md text-title-md truncate mt-0.5 font-bold">Midterm Review</div>
+<div class="text-[11px] font-body-sm text-on-error-container truncate">DS Algorithm Mock Exam</div>
+</div>
+<div class="flex items-center gap-1 text-[10px] font-label-sm opacity-90">
+<span class="material-symbols-outlined text-[13px]">priority_high</span>
+<span>Prof. Office Hours</span>
+</div>
+</div>
+</div>
+<!-- Column 5: Fri 21 -->
+<div class="relative p-1 bg-surface-container-lowest">
+<!-- 09:00 - 10:30 DBMS Quiz Prep -->
+<div class="session-block absolute left-1 right-1 top-[60px] h-[90px] rounded-xl p-2.5 bg-secondary-fixed text-on-secondary-fixed shadow-sm hover:shadow-md cursor-pointer transition-all flex flex-col justify-between overflow-hidden" data-session-id="fri-1">
+<div>
+<div class="flex items-center justify-between text-[11px] font-label-sm text-secondary">
+<span>09:00 - 10:30</span>
+<span class="bg-secondary-fixed-dim px-1 rounded text-[10px]">Quiz</span>
+</div>
+<div class="font-title-md text-title-md truncate mt-0.5">DBMS Quiz Prep</div>
+<div class="text-[11px] font-body-sm text-on-secondary-fixed-variant truncate">Relational Algebra & SQL</div>
+</div>
+<div class="flex items-center gap-1 text-[10px] font-label-sm opacity-80">
+<span class="material-symbols-outlined text-[13px]">quiz</span>
+<span>Timed Practice</span>
+</div>
+</div>
+<!-- 14:00 - 16:00 Python Project Sprint -->
+<div class="session-block absolute left-1 right-1 top-[360px] h-[120px] rounded-xl p-2.5 bg-primary-fixed text-on-primary-fixed shadow-sm hover:shadow-md cursor-pointer transition-all flex flex-col justify-between overflow-hidden" data-session-id="fri-2">
+<div>
+<div class="flex items-center justify-between text-[11px] font-label-sm text-primary">
+<span>14:00 - 16:00</span>
+<span class="bg-primary text-on-primary px-1 rounded text-[10px]">Project</span>
+</div>
+<div class="font-title-md text-title-md truncate mt-0.5">Python Sprint</div>
+<div class="text-[11px] font-body-sm text-on-primary-fixed-variant truncate">FastAPI Backend Endpoints</div>
+</div>
+<div class="flex items-center gap-1 text-[10px] font-label-sm opacity-80">
+<span class="material-symbols-outlined text-[13px]">rocket_launch</span>
+<span>Sprint Milestone 2</span>
+</div>
+</div>
+</div>
+<!-- Column 6: Sat 22 -->
+<div class="relative p-1 bg-surface-container-low/20">
+<!-- 10:00 - 12:00 Weekend Review & Flashcards -->
+<div class="session-block absolute left-1 right-1 top-[120px] h-[120px] rounded-xl p-2.5 bg-surface-container-high text-on-surface shadow-sm hover:shadow-md cursor-pointer transition-all flex flex-col justify-between overflow-hidden" data-session-id="sat-1">
+<div>
+<div class="flex items-center justify-between text-[11px] font-label-sm text-outline">
+<span>10:00 - 12:00</span>
+<span class="bg-surface-variant px-1 rounded text-[10px]">Review</span>
+</div>
+<div class="font-title-md text-title-md truncate mt-0.5">Flashcard Recall</div>
+<div class="text-[11px] font-body-sm text-on-surface-variant truncate">All STEM Definitions (120 cards)</div>
+</div>
+<div class="flex items-center gap-1 text-[10px] font-label-sm opacity-80">
+<span class="material-symbols-outlined text-[13px]">style</span>
+<span>Spaced Repetition</span>
+</div>
+</div>
+<!-- 14:00 - 16:00 Math Problem Set -->
+<div class="session-block absolute left-1 right-1 top-[360px] h-[120px] rounded-xl p-2.5 bg-surface-variant text-on-surface shadow-sm hover:shadow-md cursor-pointer transition-all flex flex-col justify-between overflow-hidden" data-session-id="sat-2">
+<div>
+<div class="flex items-center justify-between text-[11px] font-label-sm text-on-surface-variant">
+<span>14:00 - 16:00</span>
+<span class="bg-surface-container-lowest px-1 rounded text-[10px]">P-Set</span>
+</div>
+<div class="font-title-md text-title-md truncate mt-0.5">Math Problem Set</div>
+<div class="text-[11px] font-body-sm text-on-surface-variant truncate">Combinatorics & Graphs</div>
+</div>
+<div class="flex items-center gap-1 text-[10px] font-label-sm opacity-80">
+<span class="material-symbols-outlined text-[13px]">calculate</span>
+<span>Homework 4</span>
+</div>
+</div>
+</div>
+<!-- Column 7: Sun 23 -->
+<div class="relative p-1 bg-surface-container-low/20 flex flex-col justify-between">
+<!-- 11:00 - 13:00 Weekly Planning & Next Week Prep -->
+<div class="session-block absolute left-1 right-1 top-[180px] h-[120px] rounded-xl p-2.5 bg-tertiary-fixed text-on-tertiary-fixed shadow-sm hover:shadow-md cursor-pointer transition-all flex flex-col justify-between overflow-hidden" data-session-id="sun-1">
+<div>
+<div class="flex items-center justify-between text-[11px] font-label-sm text-tertiary">
+<span>11:00 - 13:00</span>
+<span class="bg-tertiary text-on-tertiary px-1 rounded text-[10px]">Planning</span>
+</div>
+<div class="font-title-md text-title-md truncate mt-0.5">Weekly Roadmap</div>
+<div class="text-[11px] font-body-sm text-on-tertiary-fixed-variant truncate">Next Sprint Planning</div>
+</div>
+<div class="flex items-center gap-1 text-[10px] font-label-sm opacity-80">
+<span class="material-symbols-outlined text-[13px]">tune</span>
+<span>Goal Calibration</span>
+</div>
+</div>
+<!-- Rest & Recovery Empty State Preview Zone in Sunday afternoon/evening -->
+<div class="absolute left-1 right-1 bottom-4 top-[380px] rounded-xl p-3 bg-surface-container-lowest/60 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-[28px] text-outline mb-1">nightlight_round</span>
+<p class="font-title-md text-[13px] text-on-surface leading-tight font-semibold">Free Evening</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1 leading-snug">No sessions scheduled for Sunday evening — perfect for rest & recovery!</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Calendar Footnote / Quick Key -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-wrap items-center justify-between text-on-surface-variant font-label-sm text-label-sm gap-2">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-tertiary"></span> Data Structures</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-primary-container"></span> Python</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-secondary"></span> DBMS</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-secondary-fixed-variant"></span> Statistics</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-outline"></span> Math</span>
+</div>
+<div class="flex items-center gap-3 text-outline">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">touch_app</span> Click any session to inspect</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">drag_indicator</span> Drag edge to adjust duration</span>
+</div>
+</div>
+</div>
+<!-- Right Rail: Quick Details Panel & Target Metrics (3 Columns on XL) -->
+<div class="xl:col-span-4 2xl:col-span-3 flex flex-col gap-space-lg">
+<!-- Session Details Card / Active Inspector -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md transition-all" id="inspectorPanel">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Active Study Session</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" title="Edit Session" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" title="Options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<div>
+<span class="px-2 py-0.5 rounded-full text-[11px] font-label-sm bg-secondary-fixed text-on-secondary-fixed font-bold">MATH240 Probability & Statistics</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-2 leading-tight">Joint Probability Distributions & Bayes' Theorem</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Deep derivation of conditional probability densities and Bayesian hypothesis updates.</p>
+</div>
+<!-- Meta Grid -->
+<div class="grid grid-cols-2 gap-space-sm p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Time Block</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+              03:30 - 05:00 PM
+            </span>
+<span class="text-[11px] text-on-surface-variant">1h 30m allocated</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Priority</span>
+<div class="mt-0.5">
+<span class="px-2 py-0.5 rounded-full text-[11px] font-label-sm bg-error-container text-on-error-container font-semibold inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> High Priority
+              </span>
+</div>
+<span class="text-[11px] text-on-surface-variant mt-0.5">Exam in 6 days</span>
+</div>
+<div class="flex flex-col col-span-2 pt-1 border-t-0">
+<span class="font-label-sm text-label-sm text-outline">Location / Desk</span>
+<span class="font-body-md text-body-md text-on-surface flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+              Science Hall Room 304 / Self-Study Desk 12
+            </span>
+</div>
+</div>
+<!-- Attached Checklist -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Subtasks & Milestones</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">3 of 4 Done (75%)</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="flex items-center gap-space-sm p-2 rounded-lg bg-surface-container-low/50 hover:bg-surface-container-low cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface line-through opacity-60">Review Lecture 7 slide deck (1-35)</span>
+</label>
+<label class="flex items-center gap-space-sm p-2 rounded-lg bg-surface-container-low/50 hover:bg-surface-container-low cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface line-through opacity-60">Derive marginal PDF formulas on whiteboard</span>
+</label>
+<label class="flex items-center gap-space-sm p-2 rounded-lg bg-surface-container-low/50 hover:bg-surface-container-low cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface line-through opacity-60">Complete 3 Bayes theorem homework cases</span>
+</label>
+<label class="flex items-center gap-space-sm p-2 rounded-lg bg-surface-container-low/50 hover:bg-surface-container-low cursor-pointer transition-colors">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Self-test on covariance & correlation matrix</span>
+</label>
+</div>
+</div>
+<!-- Attached Resources -->
+<div class="flex flex-col gap-2">
+<span class="font-title-md text-title-md text-on-surface">Attached Resources</span>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-error text-[20px]">picture_as_pdf</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Lecture_07_Bayes.pdf</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline shrink-0">4.2 MB</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]">code_blocks</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">ProblemSet_3_Solutions.ipynb</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline shrink-0">180 KB</span>
+</div>
+</div>
+</div>
+<!-- Session Action CTA Buttons -->
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full flex items-center justify-center gap-2 py-2.5 px-space-md rounded-xl bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+<span>Start Timer for this Session</span>
+</button>
+<div class="grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 py-2 px-space-sm rounded-xl bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_calendar</span>
+<span>Reschedule</span>
+</button>
+<button class="flex items-center justify-center gap-1.5 py-2 px-space-sm rounded-xl bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">share</span>
+<span>Invite Buddy</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Weekly Study Target Widget -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">target</span>
+<span class="font-title-md text-title-md text-on-surface">Weekly Study Goal</span>
+</div>
+<span class="font-label-md text-label-md px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold">54% Completed</span>
+</div>
+<!-- Telemetry Numbers -->
+<div class="grid grid-cols-3 gap-2 text-center p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Planned</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">34h</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Finished</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">18.5h</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Left</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-bold">15.5h</span>
+</div>
+</div>
+<!-- Segmented Progress Bar -->
+<div class="flex flex-col gap-1.5">
+<div class="h-3 w-full bg-surface-container-high rounded-full overflow-hidden flex">
+<!-- Completed Data Structures -->
+<div class="bg-tertiary h-full w-[24%]" title="Data Structures: 8h"></div>
+<!-- Completed DBMS -->
+<div class="bg-secondary h-full w-[15%]" title="DBMS: 5h"></div>
+<!-- Completed Python -->
+<div class="bg-primary-container h-full w-[15%]" title="Python: 5.5h"></div>
+<!-- Remaining Unfilled (46%) -->
+<div class="bg-surface-container-high h-full w-[46%]" title="Remaining: 15.5h"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-label-sm text-on-surface-variant px-0.5">
+<span>0 hrs</span>
+<span>Midpoint (17h)</span>
+<span>Target: 34 hrs</span>
+</div>
+</div>
+<!-- AI Coach Insight Snippet -->
+<div class="p-space-sm rounded-xl bg-tertiary-fixed/30 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">auto_awesome</span>
+<p class="font-body-sm text-[12px] text-on-tertiary-fixed leading-relaxed">
+<span class="font-bold">AI Pacing Tip:</span> You are ahead of schedule on Python labs. Shift 1 hour on Friday to Data Structures to guarantee 100% exam readiness.
+          </p>
+</div>
+</div>
+<!-- Quick Desk & Ambient Notes -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">sticky_note_2</span>
+            Sprint Scratchpad
+          </span>
+<button class="text-primary hover:text-primary-container font-label-sm text-label-sm font-semibold" type="button">Save</button>
+</div>
+<textarea class="w-full p-space-sm rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all resize-none" placeholder="Jot down quick reminders for tomorrow's professors or lab partners..." rows="3"></textarea>
+</div>
+</div>
+</div>
+<!-- Interactive Modal: Schedule New Study Session (Hidden by Default) -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-200" id="newSessionModal">
+<div class="bg-surface-container-lowest rounded-2xl shadow-xl max-w-lg w-full p-space-xl flex flex-col gap-space-md transform scale-95 transition-transform duration-200" id="modalDialogBox">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-xl bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">calendar_add_on</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Schedule Study Session</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lock in a focused block on your weekly timetable.</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors" id="closeModalBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" id="studySessionForm" onsubmit="event.preventDefault();">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Session Title & Topic</label>
+<input class="w-full px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="e.g. Graph Traversal Algorithms & Dijkstra" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Subject</label>
+<select class="w-full px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
+<option>Data Structures & Algorithms</option>
+<option>Python Programming</option>
+<option>Database Management (DBMS)</option>
+<option>Probability & Statistics</option>
+<option>Discrete Mathematics</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Session Type</label>
+<select class="w-full px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
+<option>Deep Work Focus</option>
+<option>Lecture & Note Synthesis</option>
+<option>Problem Set / Lab Assignment</option>
+<option>Group Revision / Peer Study</option>
+<option>Exam Mock Trial</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Day</label>
+<select class="w-full px-2 py-2 rounded-xl bg-surface-container-low text-on-surface text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
+<option>Thursday (Feb 20)</option>
+<option>Friday (Feb 21)</option>
+<option>Saturday (Feb 22)</option>
+<option>Sunday (Feb 23)</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Start Time</label>
+<input class="w-full px-2 py-2 rounded-xl bg-surface-container-low text-on-surface text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20" type="time" value="14:00"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">End Time</label>
+<input class="w-full px-2 py-2 rounded-xl bg-surface-container-low text-on-surface text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20" type="time" value="16:00"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Priority</label>
+<div class="flex items-center gap-2 pt-1">
+<label class="flex items-center gap-1 text-label-sm font-label-sm cursor-pointer">
+<input class="accent-primary" name="priority" type="radio" value="high"/> High
+              </label>
+<label class="flex items-center gap-1 text-label-sm font-label-sm cursor-pointer">
+<input checked="" class="accent-primary" name="priority" type="radio" value="med"/> Medium
+              </label>
+<label class="flex items-center gap-1 text-label-sm font-label-sm cursor-pointer">
+<input class="accent-primary" name="priority" type="radio" value="low"/> Low
+              </label>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Location / Desk</label>
+<input class="w-full px-space-md py-1.5 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Library 2nd Floor Quiet Zone" type="text"/>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="px-space-md py-2 rounded-xl bg-surface-container-high hover:bg-surface-variant text-on-surface font-title-md text-title-md transition-colors" id="cancelModalBtn" type="button">
+            Cancel
+          </button>
+<button class="px-space-lg py-2 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md transition-all shadow-sm" id="saveSessionBtn" type="submit">
+            Save Session Block
+          </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>
+  // Filter pills interaction
+  const filterPills = document.querySelectorAll('.filter-pill');
+  filterPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      filterPills.forEach(p => {
+        p.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        p.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      pill.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      pill.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    });
+  });
+
+  // View toggle buttons
+  const viewBtns = document.querySelectorAll('.view-btn');
+  viewBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      viewBtns.forEach(b => {
+        b.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      btn.classList.remove('text-on-surface-variant');
+    });
+  });
+
+  // Modal controls
+  const modal = document.getElementById('newSessionModal');
+  const modalBox = document.getElementById('modalDialogBox');
+  const openBtn = document.getElementById('openScheduleModalBtn');
+  const closeBtn = document.getElementById('closeModalBtn');
+  const cancelBtn = document.getElementById('cancelModalBtn');
+  const saveBtn = document.getElementById('saveSessionBtn');
+
+  function openModal() {
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modalBox.classList.remove('scale-95');
+    modalBox.classList.add('scale-100');
+  }
+
+  function closeModal() {
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modalBox.classList.add('scale-95');
+    modalBox.classList.remove('scale-100');
+  }
+
+  if (openBtn) openBtn.addEventListener('click', openModal);
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+  if (saveBtn) saveBtn.addEventListener('click', closeModal);
+
+  // Session Block selection state
+  const sessionBlocks = document.querySelectorAll('.session-block');
+  sessionBlocks.forEach(block => {
+    block.addEventListener('click', () => {
+      sessionBlocks.forEach(b => {
+        b.classList.remove('ring-2', 'ring-primary', 'scale-[1.01]');
+      });
+      block.classList.add('ring-2', 'ring-primary', 'scale-[1.01]');
+    });
+  });
+
+  // Week navigation micro-interactions
+  const prevWeekBtn = document.getElementById('prevWeekBtn');
+  const nextWeekBtn = document.getElementById('nextWeekBtn');
+  const dateRangeText = document.getElementById('dateRangeText');
+
+  let currentOffset = 0;
+  const ranges = [
+    'Feb 10 – Feb 16, 2025',
+    'Feb 17 – Feb 23, 2025',
+    'Feb 24 – Mar 02, 2025'
+  ];
+
+  if (prevWeekBtn && nextWeekBtn && dateRangeText) {
+    prevWeekBtn.addEventListener('click', () => {
+      if (currentOffset > -1) currentOffset--;
+      dateRangeText.textContent = ranges[currentOffset + 1] || 'Feb 17 – Feb 23, 2025';
+    });
+    nextWeekBtn.addEventListener('click', () => {
+      if (currentOffset < 1) currentOffset++;
+      dateRangeText.textContent = ranges[currentOffset + 1] || 'Feb 17 – Feb 23, 2025';
+    });
+  }
+</script></main></div></body></html>

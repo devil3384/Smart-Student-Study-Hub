@@ -1,0 +1,6 @@
+{
+  "name": "StudyFlow AI - Student Academic OS",
+  "description": "Comprehensive student productivity OS featuring study planner timetable, assignments tracker, subject curriculum manager, real-time focus pomodoro timer, and predictive performance analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-fixed":"#23005c","inverse-on-surface":"#eef0ff","on-primary-fixed":"#07006c","inverse-primary":"#c0c1ff","tertiary":"#6b38d4","error":"#ba1a1a","surface-container":"#eaedff","surface-variant":"#dae2fd","on-secondary-fixed":"#001f26","on-tertiary-fixed-variant":"#5516be","tertiary-fixed-dim":"#d0bcff","surface-container-high":"#e2e7ff","surface-container-low":"#f2f3ff","on-tertiary":"#ffffff","on-primary":"#ffffff","primary":"#4648d4","primary-fixed-dim":"#c0c1ff","on-surface-variant":"#464554","surface-container-lowest":"#ffffff","surface":"#faf8ff","on-error-container":"#93000a","secondary":"#00687a","on-secondary-container":"#006172","on-secondary-fixed-variant":"#004e5c","surface-container-highest":"#dae2fd","inverse-surface":"#283044","outline":"#767586","surface-tint":"#494bd6","on-primary-fixed-variant":"#2f2ebe","outline-variant":"#c7c4d7","primary-fixed":"#e1e0ff","on-tertiary-container":"#fffbff","error-container":"#ffdad6","on-surface":"#131b2e","background":"#faf8ff","on-primary-container":"#fffbff","tertiary-fixed":"#e9ddff","secondary-container":"#57dffe","on-secondary":"#ffffff","surface-bright":"#faf8ff","on-error":"#ffffff","primary-container":"#6063ee","tertiary-container":"#8455ef","secondary-fixed-dim":"#4cd7f6","on-background":"#131b2e","surface-dim":"#d2d9f4","secondary-fixed":"#acedff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2rem",margin:"2rem","gutter-sm":"1rem","space-md":"1rem","margin-mobile":"1rem",gutter:"1.5rem","gutter-lg":"2rem","space-lg":"1.5rem"},fontFamily:{"headline-md":["Inter"],"label-md":["Inter"],"tabular-data":["Inter"],"title-md":["Inter"],"headline-lg-mobile":["Inter"],"label-sm":["Inter"],"body-md":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"display-hero":["Inter"],"display-hero-mobile":["Inter"],"headline-lg":["Inter"]},fontSize:{"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"tabular-data":["14px",{lineHeight:"20px",letterSpacing:"-0.01em",fontWeight:"500"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0em",fontWeight:"400"}],"display-hero":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"display-hero-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.025em",fontWeight:"700"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-inverse-surface text-inverse-on-surface z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-lg"><div class="flex items-center gap-space-sm mb-space-lg"><img alt="StudyFlow AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XWYugP77TaW7e-i5EP6HwsNo2FDOop-bVgu_1Z6eamqh-tYdEUGYw3tXowjm8LOlnop7WforM-6HcYF9HfHaSx-3Yj9-z16_hKieB8MupQj-MkqaXE2iauYHnBnTAFkvXZ2FC94DHR-oVqgoLZKzI91HJ_wGSjBOY8Bc2-mB5n34ZvZ9MRcnN5CIT_qy8Q9YsT6RCzNCYm7DuCBl7ZTnpuJXiSCpfxYsUgWZ4iItYFUoFPerHmENtlDfg"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-primary leading-tight">StudyFlow AI</span><span class="inline-block px-space-xs py-0.5 rounded text-[10px] uppercase font-bold tracking-wider bg-tertiary-container text-on-tertiary-container self-start mt-0.5">STUDENT PRO</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary text-on-primary font-title-md rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="dashboard" href="#/dashboard"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="study-planner" href="#/planner"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="font-body-md text-body-md">Study Planner</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="tasks-and-assignments" href="#/tasks"><span class="material-symbols-outlined text-[20px]">checklist</span><span class="font-body-md text-body-md">Tasks & Assignments</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="my-subjects" href="#/subjects"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-body-md text-body-md">My Subjects</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="focus-timer" href="#/focus"><span class="material-symbols-outlined text-[20px]">timer</span><span class="font-body-md text-body-md">Focus Timer</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary text-on-primary font-title-md rounded-lg shadow-sm" data-path="progress-analytics" href="#/analytics"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-body-md text-body-md">Progress Analytics</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="settings" href="#/settings"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md">Settings</span></a></nav></div><div class="p-space-lg flex flex-col gap-space-md"><div class="flex items-center justify-between px-space-md py-space-xs rounded-full bg-surface-variant/20"><span class="font-label-sm text-label-sm flex items-center gap-1.5 text-secondary-fixed-dim"><span class="text-[14px]">🔥</span> 14-day study streak</span><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-pulse"></span></div><div class="p-space-md rounded-xl bg-surface-variant/10 flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-outline-variant uppercase">Pomodoro</span><span class="font-tabular-data text-tabular-data text-on-primary font-bold">24:18 left</span></div><button class="w-8 h-8 rounded-lg bg-surface-variant/20 hover:bg-surface-variant hover:text-on-surface text-on-primary flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">pause</span></button></div><button class="w-full flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-xl bg-tertiary hover:bg-primary-container text-on-tertiary font-title-md text-title-md transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span>Ask StudyFlow AI</span></button><div class="pt-space-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBers2roXeDVcCAC3_mu0HYVYiHtA9SQjm_igBqbHuau5lrvF32UwHKUW5h5zUeeX7xU79mjnmc6TDyey-rf1jAlRG2Uju7GT1qaVL5M42RQOj51uk4Sxt8LAEYcP2p-YdGoCafzBnemkzpwg9D0L_jujfutRbkubw7_22MEcKKKKDnPCGvYVd4kCrf2Dfi8pTzOlWbW7yuPkFzXF-ZDruwIPMuFQ6_MvvAFReKve3s4XSQugbLHqShVg"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim ring-2 ring-inverse-surface"></span></div><div class="flex flex-col"><span class="font-body-sm text-body-sm text-on-primary font-semibold">Alex Chen</span><span class="font-label-sm text-label-sm text-outline-variant">BS CS, Year 3</span></div></div><a class="text-outline-variant hover:text-on-primary transition-colors" href="#/settings"><span class="material-symbols-outlined text-[20px]">tune</span></a></div></div></aside><div class="pl-64 min-h-screen flex flex-col"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl gap-space-lg"><div class="flex items-center flex-1 max-w-lg"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-space-xs rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search subjects, notes, upcoming assignments... Cmd+K" type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-primary">school</span><span>Spring 2025 Semester</span><span class="material-symbols-outlined text-[16px]">expand_more</span></div><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>New Study Session</span></button><button class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px] flex items-center justify-center leading-none font-bold">3</span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBers2roXeDVcCAC3_mu0HYVYiHtA9SQjm_igBqbHuau5lrvF32UwHKUW5h5zUeeX7xU79mjnmc6TDyey-rf1jAlRG2Uju7GT1qaVL5M42RQOj51uk4Sxt8LAEYcP2p-YdGoCafzBnemkzpwg9D0L_jujfutRbkubw7_22MEcKKKKDnPCGvYVd4kCrf2Dfi8pTzOlWbW7yuPkFzXF-ZDruwIPMuFQ6_MvvAFReKve3s4XSQugbLHqShVg"/></div></div></header><main class="w-full pt-16 bg-surface px-space-xl py-space-lg flex-1"><div class="flex flex-col w-full gap-space-lg pb-space-xl">
+<!-- Top Command & Filter Bar -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Progress Analytics</span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">bolt</span> LIVE TELEMETRY
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+        Data-driven insights into your study habits, syllabus coverage, and academic performance.
+      </p>
+</div>
+<!-- Controls Cluster -->
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm">
+<!-- Date Range Selector -->
+<div class="inline-flex p-1 rounded-xl bg-surface-container-high shadow-sm">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm transition-all" type="button">
+          This Week (Feb 17 - 23)
+        </button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" type="button">
+          Last 30 Days
+        </button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" type="button">
+          Current Semester
+        </button>
+</div>
+<!-- Subject Filter -->
+<div class="relative">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">category</span>
+<span>All Subjects</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+</div>
+<!-- Export Actions Dropdown/Buttons -->
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-md text-label-md shadow-sm transition-all" title="Sync with Notion" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">cloud_sync</span>
+<span class="hidden md:inline">Sync Notion</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Export Academic Report</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KPI Cards (4 Metrics) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+<div class="absolute -right-4 -top-4 w-24 h-24 rounded-full bg-primary/5 pointer-events-none transition-transform group-hover:scale-125"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase">Logged Hours</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">pace</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-hero text-display-hero text-on-surface font-extrabold tracking-tight">34.5</span>
+<span class="font-title-md text-title-md text-outline">hrs</span>
+</div>
+<div class="flex items-center gap-1.5 mt-space-xs">
+<span class="inline-flex items-center text-secondary font-label-sm text-label-sm font-bold bg-secondary-container/30 px-1.5 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +4.2h
+          </span>
+<span class="font-body-sm text-body-sm text-outline">+14% velocity vs last week</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+<div class="absolute -right-4 -top-4 w-24 h-24 rounded-full bg-tertiary/5 pointer-events-none transition-transform group-hover:scale-125"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase">Daily Average</span>
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-hero text-display-hero text-on-surface font-extrabold tracking-tight">4.9</span>
+<span class="font-title-md text-title-md text-outline">hrs / day</span>
+</div>
+<div class="flex items-center gap-1.5 mt-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Consistent high focus band</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+<div class="absolute -right-4 -top-4 w-24 h-24 rounded-full bg-secondary/5 pointer-events-none transition-transform group-hover:scale-125"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase">Task Completion</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-hero text-display-hero text-on-surface font-extrabold tracking-tight">88</span>
+<span class="font-title-md text-title-md text-outline">%</span>
+</div>
+<div class="flex items-center gap-1.5 mt-space-xs">
+<span class="font-label-sm text-label-sm font-semibold text-secondary-fixed-dim bg-on-secondary-fixed px-1.5 py-0.5 rounded">
+            22 of 25
+          </span>
+<span class="font-body-sm text-body-sm text-outline">Deliverables finished on-time</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+<div class="absolute -right-4 -top-4 w-24 h-24 rounded-full bg-primary-container/10 pointer-events-none transition-transform group-hover:scale-125"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase">Deep Work Ratio</span>
+<div class="w-8 h-8 rounded-lg bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-hero text-display-hero text-on-surface font-extrabold tracking-tight">78</span>
+<span class="font-title-md text-title-md text-outline">%</span>
+</div>
+<div class="flex items-center gap-1.5 mt-space-xs">
+<span class="font-tabular-data text-tabular-data text-primary font-bold">42m</span>
+<span class="font-body-sm text-body-sm text-outline">Avg uninterrupted session</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Analytics Grid: 12-Column Responsive Bento Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- 1. Weekly Study Hours & Daily Productivity Chart (8 Cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Weekly Productivity Profile</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Feb 17 - 23</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Daily logged hours broken down by cognitive intensity</p>
+</div>
+<!-- Legend -->
+<div class="flex items-center gap-space-md flex-wrap">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-tertiary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Deep Pomodoros</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Assignment Prep</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-surface-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lecture Review</span>
+</div>
+</div>
+</div>
+<!-- High-Fidelity Inline SVG Chart -->
+<div class="relative w-full h-72 pt-space-sm">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 740 240">
+<defs>
+<lineargradient id="areaGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#4648d4" stop-opacity="0.18"></stop>
+<stop offset="100%" stop-color="#4648d4" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Horizontal Grid Lines -->
+<line stroke="#eaedff" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="720" y1="20" y2="20"></line>
+<line stroke="#eaedff" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="720" y1="70" y2="70"></line>
+<line stroke="#eaedff" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="720" y1="120" y2="120"></line>
+<line stroke="#eaedff" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="720" y1="170" y2="170"></line>
+<line stroke="#c7c4d7" stroke-width="1" x1="40" x2="720" y1="220" y2="220"></line>
+<!-- Y Axis Labels -->
+<text fill="#767586" font-family="Inter" font-size="11" font-weight="500" text-anchor="end" x="28" y="24">6.5h</text>
+<text fill="#767586" font-family="Inter" font-size="11" font-weight="500" text-anchor="end" x="28" y="74">5.0h</text>
+<text fill="#767586" font-family="Inter" font-size="11" font-weight="500" text-anchor="end" x="28" y="124">3.5h</text>
+<text fill="#767586" font-family="Inter" font-size="11" font-weight="500" text-anchor="end" x="28" y="174">2.0h</text>
+<text fill="#767586" font-family="Inter" font-size="11" font-weight="500" text-anchor="end" x="28" y="224">0h</text>
+<!-- Smooth Area Background Trend Line -->
+<path d="M 85 64 Q 185 36, 285 78 T 485 54 T 685 96 L 685 220 L 85 220 Z" fill="url(#areaGradient)"></path>
+<path d="M 85 64 Q 185 36, 285 78 T 485 54 T 685 96" fill="none" opacity="0.4" stroke="#4648d4" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Stacked Bars: Mon (5.2h total -> 154px height) -->
+<!-- Mon: 85 x-center -->
+<rect fill="#dae2fd" height="45" rx="3" width="28" x="71" y="175"></rect>
+<rect fill="#4648d4" height="50" rx="3" width="28" x="71" y="125"></rect>
+<rect fill="#6b38d4" height="59" rx="3" width="28" x="71" y="66"></rect>
+<text fill="#131b2e" font-family="Inter" font-size="11" font-weight="700" text-anchor="middle" x="85" y="58">5.2h</text>
+<text fill="#464554" font-family="Inter" font-size="12" font-weight="600" text-anchor="middle" x="85" y="238">Mon</text>
+<!-- Tue (6.0h total -> 180px height) -->
+<!-- Tue: 185 x-center -->
+<rect fill="#dae2fd" height="40" rx="3" width="28" x="171" y="180"></rect>
+<rect fill="#4648d4" height="65" rx="3" width="28" x="171" y="115"></rect>
+<rect fill="#6b38d4" height="75" rx="3" width="28" x="171" y="40"></rect>
+<text fill="#131b2e" font-family="Inter" font-size="11" font-weight="700" text-anchor="middle" x="185" y="32">6.0h</text>
+<text fill="#464554" font-family="Inter" font-size="12" font-weight="600" text-anchor="middle" x="185" y="238">Tue</text>
+<!-- Wed (4.8h total -> 144px height) -->
+<!-- Wed: 285 x-center -->
+<rect fill="#dae2fd" height="38" rx="3" width="28" x="271" y="182"></rect>
+<rect fill="#4648d4" height="50" rx="3" width="28" x="271" y="132"></rect>
+<rect fill="#6b38d4" height="56" rx="3" width="28" x="271" y="76"></rect>
+<text fill="#131b2e" font-family="Inter" font-size="11" font-weight="700" text-anchor="middle" x="285" y="68">4.8h</text>
+<text fill="#464554" font-family="Inter" font-size="12" font-weight="600" text-anchor="middle" x="285" y="238">Wed</text>
+<!-- Thu (5.5h total -> 165px height) -->
+<!-- Thu: 385 x-center -->
+<rect fill="#dae2fd" height="35" rx="3" width="28" x="371" y="185"></rect>
+<rect fill="#4648d4" height="60" rx="3" width="28" x="371" y="125"></rect>
+<rect fill="#6b38d4" height="70" rx="3" width="28" x="371" y="55"></rect>
+<text fill="#131b2e" font-family="Inter" font-size="11" font-weight="700" text-anchor="middle" x="385" y="47">5.5h</text>
+<text fill="#464554" font-family="Inter" font-size="12" font-weight="600" text-anchor="middle" x="385" y="238">Thu</text>
+<!-- Fri (4.5h total -> 135px height) -->
+<!-- Fri: 485 x-center -->
+<rect fill="#dae2fd" height="40" rx="3" width="28" x="471" y="180"></rect>
+<rect fill="#4648d4" height="45" rx="3" width="28" x="471" y="135"></rect>
+<rect fill="#6b38d4" height="50" rx="3" width="28" x="471" y="85"></rect>
+<text fill="#131b2e" font-family="Inter" font-size="11" font-weight="700" text-anchor="middle" x="485" y="77">4.5h</text>
+<text fill="#464554" font-family="Inter" font-size="12" font-weight="600" text-anchor="middle" x="485" y="238">Fri</text>
+<!-- Sat (4.2h total -> 126px height) -->
+<!-- Sat: 585 x-center -->
+<rect fill="#dae2fd" height="30" rx="3" width="28" x="571" y="190"></rect>
+<rect fill="#4648d4" height="45" rx="3" width="28" x="571" y="145"></rect>
+<rect fill="#6b38d4" height="51" rx="3" width="28" x="571" y="94"></rect>
+<text fill="#131b2e" font-family="Inter" font-size="11" font-weight="700" text-anchor="middle" x="585" y="86">4.2h</text>
+<text fill="#464554" font-family="Inter" font-size="12" font-weight="600" text-anchor="middle" x="585" y="238">Sat</text>
+<!-- Sun Projected (4.3h total) with striped outline aesthetic -->
+<!-- Sun: 685 x-center -->
+<rect fill="#dae2fd" height="30" rx="3" stroke="#767586" stroke-dasharray="2 2" width="28" x="671" y="190"></rect>
+<rect fill="#4648d4" height="45" rx="3" stroke="#4648d4" stroke-dasharray="2 2" width="28" x="671" y="145"></rect>
+<rect fill="#6b38d4" height="54" rx="3" stroke="#6b38d4" stroke-dasharray="2 2" width="28" x="671" y="91"></rect>
+<text fill="#767586" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle" x="685" y="83">4.3h proj</text>
+<text fill="#767586" font-family="Inter" font-size="12" font-weight="600" text-anchor="middle" x="685" y="238">Sun*</text>
+</svg>
+</div>
+<!-- Insight Callout Footer -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[18px]">wb_twilight</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Peak focus window: 09:30 AM – 12:00 PM</span>
+<span class="font-body-sm text-body-sm text-outline">You resolve algorithm problems 1.4x faster in morning slots.</span>
+</div>
+</div>
+<span class="inline-flex items-center self-start sm:self-center px-space-sm py-1 rounded-md bg-surface-container-highest text-primary font-label-md text-label-md font-semibold">
+          98% Retention
+        </span>
+</div>
+</div>
+<!-- 2. Completed vs Pending Deliverables Ratio (4 Cols Donut Gauge) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between h-full gap-space-md">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Deliverable Velocity</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider bg-secondary-container/20 px-2 py-0.5 rounded-full">Week 7</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">25 assignments, labs & quizzes tracked</p>
+</div>
+<!-- Donut Chart with Embedded Center Stats -->
+<div class="relative flex items-center justify-center my-space-xs">
+<svg class="w-52 h-52 transform -rotate-90" viewbox="0 0 200 200">
+<!-- Background track -->
+<circle cx="100" cy="100" fill="transparent" r="74" stroke="#eaedff" stroke-width="20"></circle>
+<!-- Overdue: 4% -> 18.6px (Circumference = 2 * PI * 74 = 464.95) -->
+<!-- Completed: 88% = 409.15px -->
+<circle cx="100" cy="100" fill="transparent" r="74" stroke="#00687a" stroke-dasharray="409.15 464.95" stroke-dashoffset="0" stroke-linecap="round" stroke-width="20"></circle>
+<!-- In Progress: 8% = 37.2px -->
+<circle cx="100" cy="100" fill="transparent" r="74" stroke="#4648d4" stroke-dasharray="37.2 464.95" stroke-dashoffset="-409.15" stroke-width="20"></circle>
+<!-- Overdue: 4% = 18.6px -->
+<circle cx="100" cy="100" fill="transparent" r="74" stroke="#ba1a1a" stroke-dasharray="18.6 464.95" stroke-dashoffset="-446.35" stroke-width="20"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none">
+<span class="font-display-hero text-display-hero text-on-surface leading-none font-extrabold">88%</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mt-1">Completion</span>
+</div>
+</div>
+<!-- Segment Details Breakdown -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between py-1 px-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Completed on time</span>
+</div>
+<span class="font-tabular-data text-tabular-data text-on-surface font-bold">22 <span class="text-outline font-normal">(88%)</span></span>
+</div>
+<div class="flex items-center justify-between py-1 px-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-body-md text-body-md text-on-surface-variant">In Progress</span>
+</div>
+<span class="font-tabular-data text-tabular-data text-on-surface font-bold">2 <span class="text-outline font-normal">(8%)</span></span>
+</div>
+<div class="flex items-center justify-between py-1 px-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-body-md text-body-md text-error">Overdue</span>
+</div>
+<span class="font-tabular-data text-tabular-data text-error font-bold">1 <span class="text-outline font-normal">(4%)</span></span>
+</div>
+</div>
+<!-- Deliverable Category Badges -->
+<div class="pt-space-xs border-t-0">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-space-xs">Deliverable Type Matrix</span>
+<div class="grid grid-cols-2 gap-2 text-center">
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-tabular-data text-tabular-data font-bold text-on-surface">10</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Coding Labs</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-tabular-data text-tabular-data font-bold text-on-surface">6</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Problem Sets</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-tabular-data text-tabular-data font-bold text-on-surface">4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Quizzes</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-tabular-data text-tabular-data font-bold text-on-surface">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Reports</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Analytics Row: Subject Investment & Heatmap -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- 3. Subject-wise Time Investment & Syllabus Progress (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Subject Distribution & Syllabus Mastery</span>
+<span class="font-body-sm text-body-sm text-outline">Logged time allocation vs academic curriculum completion</span>
+</div>
+<button class="text-primary hover:text-primary-container p-1 rounded transition-colors" title="Filter course weights" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Subject Progress List -->
+<div class="flex flex-col gap-space-md">
+<!-- Subject 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low/70 flex flex-col gap-2 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-title-md text-title-md text-on-surface">CS301 Data Structures</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold tracking-wider bg-primary-fixed text-on-primary-fixed-variant uppercase">Core</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-tabular-data text-tabular-data font-bold text-on-surface">12.5 hrs <span class="text-outline font-normal">(36%)</span></span>
+<span class="font-label-md text-label-md font-bold text-secondary bg-surface-container-lowest px-2 py-0.5 rounded shadow-sm">82% Mastery</span>
+</div>
+</div>
+<!-- Progress dual bar -->
+<div class="w-full bg-surface-container-highest rounded-full h-2.5 overflow-hidden flex">
+<div class="bg-primary h-full rounded-l-full transition-all" style="width: 36%;" title="Logged Time Share: 36%"></div>
+<div class="bg-secondary h-full rounded-r-full transition-all opacity-85" style="width: 46%;" title="Syllabus Mastery: 82%"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-medium text-outline pt-0.5">
+<span>Target: 10 hrs / wk (Exceeded by +2.5h)</span>
+<span>Module 7 of 9 Completed</span>
+</div>
+</div>
+<!-- Subject 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low/70 flex flex-col gap-2 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="font-title-md text-title-md text-on-surface">CS320 Python for Data Science</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold tracking-wider bg-tertiary-fixed text-on-tertiary-fixed uppercase">Elective</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-tabular-data text-tabular-data font-bold text-on-surface">8.0 hrs <span class="text-outline font-normal">(23%)</span></span>
+<span class="font-label-md text-label-md font-bold text-secondary bg-surface-container-lowest px-2 py-0.5 rounded shadow-sm">76% Mastery</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2.5 overflow-hidden flex">
+<div class="bg-tertiary h-full rounded-l-full transition-all" style="width: 23%;"></div>
+<div class="bg-secondary h-full rounded-r-full transition-all opacity-85" style="width: 53%;"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-medium text-outline pt-0.5">
+<span>Target: 8 hrs / wk (On track)</span>
+<span>NumPy & Pandas Pipelines verified</span>
+</div>
+</div>
+<!-- Subject 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low/70 flex flex-col gap-2 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-title-md text-title-md text-on-surface">CS315 Database Systems</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-tabular-data text-tabular-data font-bold text-on-surface">6.5 hrs <span class="text-outline font-normal">(19%)</span></span>
+<span class="font-label-md text-label-md font-bold text-secondary bg-surface-container-lowest px-2 py-0.5 rounded shadow-sm">68% Mastery</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2.5 overflow-hidden flex">
+<div class="bg-secondary h-full rounded-l-full transition-all" style="width: 19%;"></div>
+<div class="bg-secondary-fixed-dim h-full rounded-r-full transition-all opacity-85" style="width: 49%;"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-medium text-outline pt-0.5">
+<span>Target: 6 hrs / wk (On track)</span>
+<span>Relational Algebra Quiz due Thursday</span>
+</div>
+</div>
+<!-- Subject 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low/70 flex flex-col gap-2 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="font-title-md text-title-md text-on-surface">MATH240 Probability & Stats</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-tabular-data text-tabular-data font-bold text-on-surface">4.5 hrs <span class="text-outline font-normal">(13%)</span></span>
+<span class="font-label-md text-label-md font-bold text-secondary bg-surface-container-lowest px-2 py-0.5 rounded shadow-sm">71% Mastery</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2.5 overflow-hidden flex">
+<div class="bg-primary-container h-full rounded-l-full transition-all" style="width: 13%;"></div>
+<div class="bg-secondary h-full rounded-r-full transition-all opacity-85" style="width: 58%;"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-medium text-outline pt-0.5">
+<span>Target: 5 hrs / wk (-0.5h deficit)</span>
+<span>Poisson Distributions queued</span>
+</div>
+</div>
+<!-- Subject 5 -->
+<div class="p-space-md rounded-xl bg-surface-container-low/70 flex flex-col gap-2 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-outline"></span>
+<span class="font-title-md text-title-md text-on-surface">MATH210 Discrete Mathematics</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-error-container text-on-error-container uppercase">Attention</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-tabular-data text-tabular-data font-bold text-on-surface">3.0 hrs <span class="text-outline font-normal">(9%)</span></span>
+<span class="font-label-md text-label-md font-bold text-outline bg-surface-container-lowest px-2 py-0.5 rounded shadow-sm">62% Mastery</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2.5 overflow-hidden flex">
+<div class="bg-outline h-full rounded-l-full transition-all" style="width: 9%;"></div>
+<div class="bg-secondary h-full rounded-r-full transition-all opacity-85" style="width: 53%;"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-medium text-outline pt-0.5">
+<span>Target: 5 hrs / wk (-2.0h deficit)</span>
+<span>Graph Theory Proofs backlog</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Study Habit Heatmap (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Consistency Matrix</span>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+              🔥 14-day streak
+            </span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">12 Weeks</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Daily study rhythm and intensity telemetry</p>
+</div>
+<!-- Year to date telemetry strip -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-high/60">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Semester Total</span>
+<span class="font-headline-md text-headline-md text-on-surface font-extrabold">198.5 hrs</span>
+</div>
+<div class="h-8 w-px bg-outline-variant"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Active Days</span>
+<span class="font-headline-md text-headline-md text-primary font-extrabold">56 / 64</span>
+</div>
+<div class="h-8 w-px bg-outline-variant"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Max Day</span>
+<span class="font-headline-md text-headline-md text-tertiary font-extrabold">7.8 hrs</span>
+</div>
+</div>
+<!-- 12-Week Interactive Heatmap Grid (7 rows x 12 cols) -->
+<div class="flex flex-col gap-1.5 overflow-x-auto pb-1">
+<div class="flex items-center justify-between text-[11px] text-outline font-medium px-1">
+<span>Dec</span>
+<span>Jan</span>
+<span>Feb</span>
+</div>
+<!-- Render 7 Days of Week Rows -->
+<div class="grid grid-flow-col grid-rows-7 gap-1.5 min-w-[280px]">
+<!-- Week 1 -->
+<div class="w-5 h-5 rounded bg-surface-container" title="Dec 2: 0h"></div>
+<div class="w-5 h-5 rounded bg-surface-container-high" title="Dec 3: 1.5h"></div>
+<div class="w-5 h-5 rounded bg-primary/40" title="Dec 4: 3.2h"></div>
+<div class="w-5 h-5 rounded bg-primary/40" title="Dec 5: 3.0h"></div>
+<div class="w-5 h-5 rounded bg-surface-container" title="Dec 6: 0h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Dec 7: 4.5h"></div>
+<div class="w-5 h-5 rounded bg-surface-container" title="Dec 8: 0h"></div>
+<!-- Week 2 -->
+<div class="w-5 h-5 rounded bg-primary/40" title="Dec 9: 3.1h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Dec 10: 4.8h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Dec 11: 5.5h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Dec 12: 4.0h"></div>
+<div class="w-5 h-5 rounded bg-primary/40" title="Dec 13: 2.8h"></div>
+<div class="w-5 h-5 rounded bg-surface-container" title="Dec 14: 0h"></div>
+<div class="w-5 h-5 rounded bg-primary/40" title="Dec 15: 3.2h"></div>
+<!-- Week 3 -->
+<div class="w-5 h-5 rounded bg-surface-container" title="Dec 16: 0h"></div>
+<div class="w-5 h-5 rounded bg-primary/40" title="Dec 17: 2.5h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Dec 18: 4.2h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Dec 19: 6.0h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Dec 20: 4.0h"></div>
+<div class="w-5 h-5 rounded bg-primary/40" title="Dec 21: 3.0h"></div>
+<div class="w-5 h-5 rounded bg-surface-container" title="Dec 22: 0h"></div>
+<!-- Week 4 (Holidays break) -->
+<div class="w-5 h-5 rounded bg-surface-container" title="Dec 23: 0h"></div>
+<div class="w-5 h-5 rounded bg-surface-container" title="Dec 24: 0h"></div>
+<div class="w-5 h-5 rounded bg-surface-container" title="Dec 25: 0h"></div>
+<div class="w-5 h-5 rounded bg-surface-container" title="Dec 26: 0h"></div>
+<div class="w-5 h-5 rounded bg-primary/40" title="Dec 27: 2.1h"></div>
+<div class="w-5 h-5 rounded bg-surface-container" title="Dec 28: 0h"></div>
+<div class="w-5 h-5 rounded bg-primary/40" title="Dec 29: 2.5h"></div>
+<!-- Week 5 -->
+<div class="w-5 h-5 rounded bg-primary/40" title="Dec 30: 3.0h"></div>
+<div class="w-5 h-5 rounded bg-surface-container" title="Dec 31: 0h"></div>
+<div class="w-5 h-5 rounded bg-surface-container" title="Jan 1: 0h"></div>
+<div class="w-5 h-5 rounded bg-primary/40" title="Jan 2: 3.2h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Jan 3: 4.5h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Jan 4: 5.8h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Jan 5: 4.0h"></div>
+<!-- Week 6 -->
+<div class="w-5 h-5 rounded bg-primary/60" title="Jan 6: 4.2h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Jan 7: 5.5h"></div>
+<div class="w-5 h-5 rounded bg-tertiary" title="Jan 8: 7.1h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Jan 9: 5.0h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Jan 10: 4.2h"></div>
+<div class="w-5 h-5 rounded bg-surface-container" title="Jan 11: 0h"></div>
+<div class="w-5 h-5 rounded bg-primary/40" title="Jan 12: 3.0h"></div>
+<!-- Week 7 -->
+<div class="w-5 h-5 rounded bg-primary/60" title="Jan 13: 4.5h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Jan 14: 5.8h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Jan 15: 5.2h"></div>
+<div class="w-5 h-5 rounded bg-tertiary" title="Jan 16: 6.9h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Jan 17: 4.1h"></div>
+<div class="w-5 h-5 rounded bg-primary/40" title="Jan 18: 3.2h"></div>
+<div class="w-5 h-5 rounded bg-primary/40" title="Jan 19: 2.8h"></div>
+<!-- Week 8 -->
+<div class="w-5 h-5 rounded bg-primary/60" title="Jan 20: 4.0h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Jan 21: 5.6h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Jan 22: 5.3h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Jan 23: 4.8h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Jan 24: 4.0h"></div>
+<div class="w-5 h-5 rounded bg-surface-container" title="Jan 25: 0h"></div>
+<div class="w-5 h-5 rounded bg-primary/40" title="Jan 26: 3.1h"></div>
+<!-- Week 9 -->
+<div class="w-5 h-5 rounded bg-primary/60" title="Jan 27: 4.2h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Jan 28: 5.9h"></div>
+<div class="w-5 h-5 rounded bg-tertiary" title="Jan 29: 7.4h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Jan 30: 5.1h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Jan 31: 4.5h"></div>
+<div class="w-5 h-5 rounded bg-primary/40" title="Feb 1: 3.0h"></div>
+<div class="w-5 h-5 rounded bg-surface-container" title="Feb 2: 0h"></div>
+<!-- Week 10 (Current Streak Start) -->
+<div class="w-5 h-5 rounded bg-primary/60" title="Feb 3: 4.5h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Feb 4: 5.8h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Feb 5: 5.2h"></div>
+<div class="w-5 h-5 rounded bg-tertiary" title="Feb 6: 7.2h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Feb 7: 5.0h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Feb 8: 4.1h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Feb 9: 4.0h"></div>
+<!-- Week 11 (Active Streak) -->
+<div class="w-5 h-5 rounded bg-primary" title="Feb 10: 5.4h"></div>
+<div class="w-5 h-5 rounded bg-tertiary" title="Feb 11: 6.8h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Feb 12: 5.5h"></div>
+<div class="w-5 h-5 rounded bg-primary" title="Feb 13: 5.1h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Feb 14: 4.3h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Feb 15: 4.5h"></div>
+<div class="w-5 h-5 rounded bg-primary/60" title="Feb 16: 4.0h"></div>
+<!-- Week 12 (This Week) -->
+<div class="w-5 h-5 rounded bg-primary ring-2 ring-primary-fixed" title="Feb 17: 5.2h"></div>
+<div class="w-5 h-5 rounded bg-tertiary ring-2 ring-primary-fixed" title="Feb 18: 6.0h"></div>
+<div class="w-5 h-5 rounded bg-primary ring-2 ring-primary-fixed" title="Feb 19: 4.8h"></div>
+<div class="w-5 h-5 rounded bg-primary ring-2 ring-primary-fixed" title="Feb 20: 5.5h"></div>
+<div class="w-5 h-5 rounded bg-primary/60 ring-2 ring-primary-fixed" title="Feb 21: 4.5h"></div>
+<div class="w-5 h-5 rounded bg-primary/60 ring-2 ring-primary-fixed" title="Feb 22: 4.2h"></div>
+<div class="w-5 h-5 rounded bg-surface-container-highest animate-pulse ring-2 ring-secondary" title="Feb 23: Today Active"></div>
+</div>
+<!-- Heatmap Intensity Key -->
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant pt-space-xs">
+<span>Less</span>
+<div class="flex items-center gap-1">
+<span class="w-3.5 h-3.5 rounded bg-surface-container"></span>
+<span class="w-3.5 h-3.5 rounded bg-primary/40"></span>
+<span class="w-3.5 h-3.5 rounded bg-primary/60"></span>
+<span class="w-3.5 h-3.5 rounded bg-primary"></span>
+<span class="w-3.5 h-3.5 rounded bg-tertiary"></span>
+</div>
+<span>More (7h+)</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Optimal study pace maintained: <strong class="text-on-surface">5/7 days above 4.5h</strong></span>
+<button class="text-primary hover:underline font-label-md text-label-md" type="button">View log</button>
+</div>
+</div>
+</div>
+<!-- 5. AI Performance Insights & Predictive Grade Analysis (Full Width Bento Tier) -->
+<div class="relative overflow-hidden rounded-xl bg-inverse-surface text-inverse-on-surface p-space-xl shadow-md">
+<!-- Ambient glowing accents -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-1/3 w-64 h-64 bg-tertiary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row items-stretch gap-space-xl">
+<!-- Grade Projection Column -->
+<div class="xl:w-1/3 flex flex-col justify-between p-space-lg rounded-xl bg-surface-variant/10">
+<div>
+<div class="flex items-center gap-space-xs text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-bold">Predictive AI Analytics</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary mt-space-xs">Predicted Term GPA</h3>
+<p class="font-body-sm text-body-sm text-outline-variant mt-1">
+            Bayesian confidence projection trained on your past 14 assignment submissions and exam weighting.
+          </p>
+</div>
+<div class="my-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-hero text-display-hero text-on-primary font-extrabold tracking-tight">3.82</span>
+<span class="font-title-md text-title-md text-outline-variant">/ 4.00</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> 94.2% CONFIDENCE
+            </span>
+<span class="font-label-sm text-label-sm text-outline-variant">Dean's List Track</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 pt-space-xs border-t-0">
+<div class="flex justify-between font-body-sm text-body-sm text-outline-variant">
+<span>Simulated Finals Floor:</span>
+<span class="text-on-primary font-semibold font-tabular-data">3.71 GPA</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-outline-variant">
+<span>Projected Ceiling:</span>
+<span class="text-secondary-fixed-dim font-semibold font-tabular-data">3.94 GPA</span>
+</div>
+</div>
+</div>
+<!-- Actionable AI Recommendations Column -->
+<div class="xl:w-2/3 flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[22px]">psychology_alt</span>
+<span class="font-headline-sm text-headline-sm text-on-primary">Actionable Algorithmic Prescriptions</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline-variant hidden sm:inline">Refreshed 28 mins ago</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Recommendation 1 -->
+<div class="p-space-lg rounded-xl bg-surface-variant/10 flex flex-col justify-between gap-space-sm hover:bg-surface-variant/20 transition-all">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold tracking-wider bg-error-container text-on-error-container uppercase">
+                  Grade Risk Alert
+                </span>
+<span class="font-label-sm text-label-sm text-outline-variant">Discrete Math</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-primary font-semibold">Allocate +1.5 hrs to Discrete Math this weekend</h4>
+<p class="font-body-sm text-body-sm text-outline-variant">
+                Your syllabus velocity in Graph Theory is 8% under syllabus benchmark. An additional 90-minute proof workshop protects your A- trajectory before Quiz #3.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="inline-flex items-center gap-1 text-primary-fixed font-label-md text-label-md hover:text-on-primary transition-colors" type="button">
+<span>Auto-schedule 90m block</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Recommendation 2 -->
+<div class="p-space-lg rounded-xl bg-surface-variant/10 flex flex-col justify-between gap-space-sm hover:bg-surface-variant/20 transition-all">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold tracking-wider bg-secondary-fixed text-on-secondary-fixed uppercase">
+                  Circadian Optimization
+                </span>
+<span class="font-label-sm text-label-sm text-outline-variant">Cognitive Peak</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-primary font-semibold">Shift heavy coding sprints away from late evenings</h4>
+<p class="font-body-sm text-body-sm text-outline-variant">
+                Telemetry shows focus falls by 30% after 9:00 PM with 2.1x higher debug cycles. Rescheduling Data Structures to morning slots boosted your efficiency by 1.4x.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="inline-flex items-center gap-1 text-secondary-fixed-dim font-label-md text-label-md hover:text-on-primary transition-colors" type="button">
+<span>Apply morning study routine</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Copilot Prompt Bar Footer -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-variant/15 gap-space-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px] flex-shrink-0">chat_spark</span>
+<span class="font-body-sm text-body-sm text-outline-variant truncate">
+              Want a customized syllabus recovery schedule for your upcoming midterms?
+            </span>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-tertiary text-on-tertiary hover:bg-primary-container font-label-md text-label-md whitespace-nowrap transition-all shadow-sm" type="button">
+            Generate Plan
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive client-side handler for the date filter switches
+  document.addEventListener('DOMContentLoaded', () => {
+    const rangeButtons = document.querySelectorAll('.inline-flex.p-1 button');
+    rangeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        rangeButtons.forEach(b => {
+          b.className = 'px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all';
+        });
+        btn.className = 'px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm transition-all';
+      });
+    });
+  });
+</script></main></div></body></html>

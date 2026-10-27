@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-fixed":"#23005c","inverse-on-surface":"#eef0ff","on-primary-fixed":"#07006c","inverse-primary":"#c0c1ff","tertiary":"#6b38d4","error":"#ba1a1a","surface-container":"#eaedff","surface-variant":"#dae2fd","on-secondary-fixed":"#001f26","on-tertiary-fixed-variant":"#5516be","tertiary-fixed-dim":"#d0bcff","surface-container-high":"#e2e7ff","surface-container-low":"#f2f3ff","on-tertiary":"#ffffff","on-primary":"#ffffff","primary":"#4648d4","primary-fixed-dim":"#c0c1ff","on-surface-variant":"#464554","surface-container-lowest":"#ffffff","surface":"#faf8ff","on-error-container":"#93000a","secondary":"#00687a","on-secondary-container":"#006172","on-secondary-fixed-variant":"#004e5c","surface-container-highest":"#dae2fd","inverse-surface":"#283044","outline":"#767586","surface-tint":"#494bd6","on-primary-fixed-variant":"#2f2ebe","outline-variant":"#c7c4d7","primary-fixed":"#e1e0ff","on-tertiary-container":"#fffbff","error-container":"#ffdad6","on-surface":"#131b2e","background":"#faf8ff","on-primary-container":"#fffbff","tertiary-fixed":"#e9ddff","secondary-container":"#57dffe","on-secondary":"#ffffff","surface-bright":"#faf8ff","on-error":"#ffffff","primary-container":"#6063ee","tertiary-container":"#8455ef","secondary-fixed-dim":"#4cd7f6","on-background":"#131b2e","surface-dim":"#d2d9f4","secondary-fixed":"#acedff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2rem",margin:"2rem","gutter-sm":"1rem","space-md":"1rem","margin-mobile":"1rem",gutter:"1.5rem","gutter-lg":"2rem","space-lg":"1.5rem"},fontFamily:{"headline-md":["Inter"],"label-md":["Inter"],"tabular-data":["Inter"],"title-md":["Inter"],"headline-lg-mobile":["Inter"],"label-sm":["Inter"],"body-md":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"display-hero":["Inter"],"display-hero-mobile":["Inter"],"headline-lg":["Inter"]},fontSize:{"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"tabular-data":["14px",{lineHeight:"20px",letterSpacing:"-0.01em",fontWeight:"500"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0em",fontWeight:"400"}],"display-hero":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"display-hero-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.025em",fontWeight:"700"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-inverse-surface text-inverse-on-surface z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-lg"><div class="flex items-center gap-space-sm mb-space-lg"><img alt="StudyFlow AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XWYugP77TaW7e-i5EP6HwsNo2FDOop-bVgu_1Z6eamqh-tYdEUGYw3tXowjm8LOlnop7WforM-6HcYF9HfHaSx-3Yj9-z16_hKieB8MupQj-MkqaXE2iauYHnBnTAFkvXZ2FC94DHR-oVqgoLZKzI91HJ_wGSjBOY8Bc2-mB5n34ZvZ9MRcnN5CIT_qy8Q9YsT6RCzNCYm7DuCBl7ZTnpuJXiSCpfxYsUgWZ4iItYFUoFPerHmENtlDfg"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-primary leading-tight">StudyFlow AI</span><span class="inline-block px-space-xs py-0.5 rounded text-[10px] uppercase font-bold tracking-wider bg-tertiary-container text-on-tertiary-container self-start mt-0.5">STUDENT PRO</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary text-on-primary font-title-md rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="dashboard" href="#/dashboard"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="study-planner" href="#/planner"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="font-body-md text-body-md">Study Planner</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary text-on-primary font-title-md rounded-lg shadow-sm" data-path="tasks-and-assignments" href="#/tasks"><span class="material-symbols-outlined text-[20px]">checklist</span><span class="font-body-md text-body-md">Tasks & Assignments</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="my-subjects" href="#/subjects"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-body-md text-body-md">My Subjects</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="focus-timer" href="#/focus"><span class="material-symbols-outlined text-[20px]">timer</span><span class="font-body-md text-body-md">Focus Timer</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="progress-analytics" href="#/analytics"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-body-md text-body-md">Progress Analytics</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-outline-variant hover:bg-surface-variant hover:text-on-surface transition-all" data-path="settings" href="#/settings"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md">Settings</span></a></nav></div><div class="p-space-lg flex flex-col gap-space-md"><div class="flex items-center justify-between px-space-md py-space-xs rounded-full bg-surface-variant/20"><span class="font-label-sm text-label-sm flex items-center gap-1.5 text-secondary-fixed-dim"><span class="text-[14px]">🔥</span> 14-day study streak</span><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-pulse"></span></div><div class="p-space-md rounded-xl bg-surface-variant/10 flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-outline-variant uppercase">Pomodoro</span><span class="font-tabular-data text-tabular-data text-on-primary font-bold">24:18 left</span></div><button class="w-8 h-8 rounded-lg bg-surface-variant/20 hover:bg-surface-variant hover:text-on-surface text-on-primary flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">pause</span></button></div><button class="w-full flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-xl bg-tertiary hover:bg-primary-container text-on-tertiary font-title-md text-title-md transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span>Ask StudyFlow AI</span></button><div class="pt-space-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBers2roXeDVcCAC3_mu0HYVYiHtA9SQjm_igBqbHuau5lrvF32UwHKUW5h5zUeeX7xU79mjnmc6TDyey-rf1jAlRG2Uju7GT1qaVL5M42RQOj51uk4Sxt8LAEYcP2p-YdGoCafzBnemkzpwg9D0L_jujfutRbkubw7_22MEcKKKKDnPCGvYVd4kCrf2Dfi8pTzOlWbW7yuPkFzXF-ZDruwIPMuFQ6_MvvAFReKve3s4XSQugbLHqShVg"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim ring-2 ring-inverse-surface"></span></div><div class="flex flex-col"><span class="font-body-sm text-body-sm text-on-primary font-semibold">Alex Chen</span><span class="font-label-sm text-label-sm text-outline-variant">BS CS, Year 3</span></div></div><a class="text-outline-variant hover:text-on-primary transition-colors" href="#/settings"><span class="material-symbols-outlined text-[20px]">tune</span></a></div></div></aside><div class="pl-64 min-h-screen flex flex-col"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl gap-space-lg"><div class="flex items-center flex-1 max-w-lg"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-space-xs rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search subjects, notes, upcoming assignments... Cmd+K" type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-primary">school</span><span>Spring 2025 Semester</span><span class="material-symbols-outlined text-[16px]">expand_more</span></div><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>New Study Session</span></button><button class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[10px] flex items-center justify-center leading-none font-bold">3</span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBers2roXeDVcCAC3_mu0HYVYiHtA9SQjm_igBqbHuau5lrvF32UwHKUW5h5zUeeX7xU79mjnmc6TDyey-rf1jAlRG2Uju7GT1qaVL5M42RQOj51uk4Sxt8LAEYcP2p-YdGoCafzBnemkzpwg9D0L_jujfutRbkubw7_22MEcKKKKDnPCGvYVd4kCrf2Dfi8pTzOlWbW7yuPkFzXF-ZDruwIPMuFQ6_MvvAFReKve3s4XSQugbLHqShVg"/></div></div></header><main class="w-full pt-16 bg-surface px-space-xl py-space-lg flex-1"><div class="flex flex-col w-full gap-space-lg">
+<!-- Header Section with Typography Hierarchy & High-Contrast CTA Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Workspace / Academic Modules</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Spring 2025</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Tasks & Assignments</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Track problem sets, coding assignments, lab submissions, and reading tasks with algorithmic focus.</p>
+</div>
+<!-- Action Toolbar -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg">
+<button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-md font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm transition-all" id="viewToggleList" onclick="toggleView('list')">
+<span class="material-symbols-outlined text-[18px]">format_list_bulleted</span>
+<span>List View</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="viewToggleKanban" onclick="toggleView('kanban')">
+<span class="material-symbols-outlined text-[18px]">view_kanban</span>
+<span>Board View</span>
+</button>
+</div>
+<div class="relative">
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-title-md text-title-md transition-all" id="bulkActionsBtn" onclick="toggleDropdown('bulkMenu')">
+<span class="material-symbols-outlined text-[18px] text-outline">checklist_rtl</span>
+<span>Bulk Actions</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+<div class="hidden absolute right-0 mt-2 w-48 bg-surface-container-lowest rounded-xl shadow-xl py-2 z-30" id="bulkMenu">
+<button class="w-full text-left px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">done_all</span> Mark as Completed
+          </button>
+<button class="w-full text-left px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_today</span> Reschedule Week
+          </button>
+<button class="w-full text-left px-4 py-2 font-body-sm text-body-sm text-error hover:bg-error-container/30 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-error">delete</span> Delete Selected
+          </button>
+</div>
+</div>
+<button class="flex items-center gap-2 px-space-lg py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md shadow-md transition-all" onclick="openTaskModal()">
+<span class="material-symbols-outlined text-[20px]">add_task</span>
+<span>Create New Task</span>
+</button>
+</div>
+</div>
+<!-- Key Academic Workload Telemetry & Metric Highlights -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Total Workload -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Total Workload</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">26</span>
+<span class="font-body-sm text-body-sm text-outline">items enrolled</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">assignment</span>
+</div>
+</div>
+<!-- Overdue Alert Badge -->
+<div class="bg-error-container/30 p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-error-container font-bold">Overdue Urgency</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md font-bold text-error">3</span>
+<span class="font-body-sm text-body-sm text-on-error-container">requires immediate review</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[24px]">warning</span>
+</div>
+</div>
+<!-- Pending / Due Soon -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Due This Week</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">9</span>
+<span class="font-body-sm text-body-sm text-secondary">pending submissions</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">schedule</span>
+</div>
+</div>
+<!-- Completed & Velocity -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-semibold">Sprint Velocity</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">14</span>
+<span class="font-body-sm text-body-sm text-tertiary">solved (+8% vs LW)</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/60 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Deep Search & Multi-Dimensional Filtering Strip -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col md:flex-row gap-space-md items-center justify-between">
+<div class="relative w-full md:w-80 lg:w-96">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/30 transition-all" id="taskSearchInput" onkeyup="filterTasks()" placeholder="Search tasks by title, tag, or description..." type="text"/>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm w-full md:w-auto">
+<!-- Subject Filter -->
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-outline">category</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer" id="subjectFilter" onchange="filterTasks()">
+<option value="all">All Subjects</option>
+<option value="CS301">CS301: Data Structures</option>
+<option value="CS315">CS315: DBMS Engines</option>
+<option value="CS320">CS320: Python & Data Analysis</option>
+<option value="MATH240">MATH240: Statistics</option>
+<option value="MATH210">MATH210: Discrete Math</option>
+</select>
+</div>
+<!-- Priority Filter -->
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-outline">flag</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer" id="priorityFilter" onchange="filterTasks()">
+<option value="all">Priority: All</option>
+<option value="high">High Priority</option>
+<option value="medium">Medium Priority</option>
+<option value="low">Low Priority</option>
+</select>
+</div>
+<!-- Type Filter -->
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-outline">filter_list</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer" id="typeFilter" onchange="filterTasks()">
+<option value="all">Type: All</option>
+<option value="Assignment">Assignment</option>
+<option value="Coding Project">Coding Project</option>
+<option value="Lab">Lab</option>
+<option value="Reading">Reading</option>
+<option value="Homework">Homework</option>
+</select>
+</div>
+<button class="p-2 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-low transition-colors" onclick="resetFilters()" title="Reset Filters">
+<span class="material-symbols-outlined text-[20px]">restart_alt</span>
+</button>
+</div>
+</div>
+<!-- Dynamic Container for Task Organization (Default: Stacked List View) -->
+<div class="flex flex-col gap-space-xl" id="listViewContainer">
+<!-- 1. OVERDUE SECTION (Targeted Rose Ambient Alert) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between bg-error-container/20 px-space-md py-space-sm rounded-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">error</span>
+</div>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Past Due Critical Submissions</h2>
+<p class="font-body-sm text-body-sm text-error font-medium">Late submission penalty active. Automated extension request ready.</p>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-error text-on-error font-label-sm text-label-sm font-bold uppercase tracking-wider">2 Critical</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Overdue Card 1 -->
+<div class="task-item bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md" data-priority="high" data-subject="CS301" data-type="Coding Project">
+<div class="flex items-start gap-space-md">
+<div class="pt-0.5">
+<button class="w-5 h-5 rounded bg-surface-container-low hover:bg-primary/20 flex items-center justify-center text-transparent hover:text-primary transition-colors" onclick="toggleTaskStatus(this)">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant font-bold">CS301</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-error font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">priority_high</span> High
+                </span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant">Code Submission</span>
+<span class="font-label-sm text-label-sm text-error font-bold">Overdue by 1 day!</span>
+</div>
+<h3 class="task-title font-title-md text-title-md text-on-surface font-semibold">Implement AVL Tree Self-Balancing Rotations</h3>
+<p class="font-body-sm text-body-sm text-outline">Requires left/right double rotation edge cases validation on LeetCode test suite.</p>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-space-md pl-8 md:pl-0">
+<div class="flex flex-col md:items-end">
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event_busy</span> Due Yesterday, Feb 18
+              </span>
+<span class="font-tabular-data text-tabular-data text-outline">Est: 2.5 hrs remaining</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container font-label-md text-label-md text-on-surface transition-colors" onclick="showToast('Extension requested for CS301')">
+                Request Extension
+              </button>
+<button class="px-3 py-1.5 rounded-lg bg-error hover:bg-on-error-container text-on-error font-label-md text-label-md transition-colors font-semibold" onclick="showToast('Opening late upload portal...')">
+                Submit Late
+              </button>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Overdue Card 2 -->
+<div class="task-item bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md" data-priority="medium" data-subject="CS315" data-type="Assignment">
+<div class="flex items-start gap-space-md">
+<div class="pt-0.5">
+<button class="w-5 h-5 rounded bg-surface-container-low hover:bg-primary/20 flex items-center justify-center text-transparent hover:text-primary transition-colors" onclick="toggleTaskStatus(this)">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed font-bold">CS315</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface font-semibold">Medium</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant">Worksheet</span>
+<span class="font-label-sm text-label-sm text-error font-bold">Overdue by 3 days</span>
+</div>
+<h3 class="task-title font-title-md text-title-md text-on-surface font-semibold">Relational Schema Normalization Worksheet</h3>
+<p class="font-body-sm text-body-sm text-outline">Convert raw relational schemas up to Boyce-Codd Normal Form (BCNF) proofs.</p>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-space-md pl-8 md:pl-0">
+<div class="flex flex-col md:items-end">
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event_busy</span> Due Feb 16, 11:59 PM
+              </span>
+<span class="font-tabular-data text-tabular-data text-outline">Est: 1.0 hr remaining</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container font-label-md text-label-md text-on-surface transition-colors font-semibold" onclick="showToast('Late submission dialog active')">
+                Submit Late
+              </button>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. PENDING / DUE SOON SECTION (Primary Focus) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">pending_actions</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Upcoming Academic Deliverables</h2>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-primary font-tabular-data text-label-sm font-bold">6 Active</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline font-medium">Sorted by: Deadline urgency</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Pending Task 1: Red-Black Tree Visualizer -->
+<div class="task-item bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-space-md" data-priority="high" data-subject="CS301" data-type="Coding Project">
+<div class="flex items-start gap-space-md">
+<div class="pt-1">
+<button class="w-5 h-5 rounded bg-surface-container-low hover:bg-primary/20 flex items-center justify-center text-transparent hover:text-primary transition-colors" onclick="toggleTaskStatus(this)">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant font-bold">CS301</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-error font-bold">High Priority</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant font-medium">Coding Project</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span> Due Tomorrow at 11:59 PM
+                </span>
+</div>
+<h3 class="task-title font-title-md text-title-md text-on-surface font-bold">Red-Black Tree Visualizer Project (Part 1)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Build Canvas 2D engine to display red/black node balance changes and rotation transitions.</p>
+<!-- Subtask Progress Bar -->
+<div class="flex items-center gap-space-md mt-1">
+<div class="w-48 h-2 rounded-full bg-surface-container-low overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 75%;"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">3 of 4 subtasks done (75%)</span>
+<span class="font-tabular-data text-label-sm text-outline">· Est: 3.5 hrs left</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-space-md pl-8 lg:pl-0">
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" onclick="startPomodoro('Red-Black Tree')">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span> Focus Sprint
+              </button>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pending Task 2: PostgreSQL Indexing Benchmark -->
+<div class="task-item bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-space-md" data-priority="high" data-subject="CS315" data-type="Lab">
+<div class="flex items-start gap-space-md">
+<div class="pt-1">
+<button class="w-5 h-5 rounded bg-surface-container-low hover:bg-primary/20 flex items-center justify-center text-transparent hover:text-primary transition-colors" onclick="toggleTaskStatus(this)">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed font-bold">CS315</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-error font-bold">High Priority</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant font-medium">Lab Report</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event</span> Thu Feb 20, 5:00 PM
+                </span>
+</div>
+<h3 class="task-title font-title-md text-title-md text-on-surface font-bold">PostgreSQL Indexing Benchmark Lab Report</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Compare B-Tree vs Hash vs GiST execution plans on 2.5M records dataset using EXPLAIN ANALYZE.</p>
+<div class="flex items-center gap-space-md mt-1">
+<div class="w-48 h-2 rounded-full bg-surface-container-low overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 33%;"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">1 of 3 subtasks done (33%)</span>
+<span class="font-tabular-data text-label-sm text-outline">· Est: 2.0 hrs</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-space-md pl-8 lg:pl-0">
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" onclick="startPomodoro('Postgres Benchmark')">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span> Focus Sprint
+              </button>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pending Task 3: MATH240 Multivariate Normal Distribution -->
+<div class="task-item bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-space-md" data-priority="medium" data-subject="MATH240" data-type="Homework">
+<div class="flex items-start gap-space-md">
+<div class="pt-1">
+<button class="w-5 h-5 rounded bg-surface-container-low hover:bg-primary/20 flex items-center justify-center text-transparent hover:text-primary transition-colors" onclick="toggleTaskStatus(this)">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed-variant font-bold">MATH240</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface font-semibold">Medium</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant font-medium">Homework</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event</span> Fri Feb 21, 10:00 AM
+                </span>
+</div>
+<h3 class="task-title font-title-md text-title-md text-on-surface font-bold">Multivariate Normal Distribution Problem Set #4</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Questions 4 through 9 on covariance matrix diagonalization and probability density calculations.</p>
+<div class="flex items-center gap-space-md mt-1">
+<span class="font-tabular-data text-label-sm text-outline">Est: 1.5 hrs remaining</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-space-md pl-8 lg:pl-0">
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" onclick="startPomodoro('Multivariate PSet 4')">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span> Focus Sprint
+              </button>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pending Task 4: Pandas & NumPy Exploratory Data Analysis -->
+<div class="task-item bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-space-md" data-priority="medium" data-subject="CS320" data-type="Assignment">
+<div class="flex items-start gap-space-md">
+<div class="pt-1">
+<button class="w-5 h-5 rounded bg-surface-container-low hover:bg-primary/20 flex items-center justify-center text-transparent hover:text-primary transition-colors" onclick="toggleTaskStatus(this)">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed-dim text-on-primary-fixed-variant font-bold">CS320</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface font-semibold">Medium</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant font-medium">Jupyter Notebook</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event</span> Sun Feb 23, 11:59 PM
+                </span>
+</div>
+<h3 class="task-title font-title-md text-title-md text-on-surface font-bold">Pandas & NumPy Exploratory Data Analysis</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Perform feature engineering, missing value imputation, and Seaborn heatmaps on Kaggle housing data.</p>
+<div class="flex items-center gap-space-md mt-1">
+<span class="font-tabular-data text-label-sm text-outline">Est: 4.0 hrs remaining</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-space-md pl-8 lg:pl-0">
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" onclick="startPomodoro('EDA Notebook')">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span> Focus Sprint
+              </button>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pending Task 5: Read Chapter 8: B-Trees and Storage Engines -->
+<div class="task-item bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-space-md" data-priority="low" data-subject="CS315" data-type="Reading">
+<div class="flex items-start gap-space-md">
+<div class="pt-1">
+<button class="w-5 h-5 rounded bg-surface-container-low hover:bg-primary/20 flex items-center justify-center text-transparent hover:text-primary transition-colors" onclick="toggleTaskStatus(this)">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed font-bold">CS315</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-outline font-medium">Low Priority</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant font-medium">Reading</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event</span> Next Mon Feb 24
+                </span>
+</div>
+<h3 class="task-title font-title-md text-title-md text-on-surface font-bold">Read Chapter 8: B-Trees and Storage Engines</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Designing Data-Intensive Applications (DDIA) pages 79-112 covering LSM-Trees vs B-Trees.</p>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-space-md pl-8 lg:pl-0">
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" onclick="startPomodoro('DDIA Chapter 8')">
+<span class="material-symbols-outlined text-[16px]">menu_book</span> Read PDF
+              </button>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pending Task 6: Prepare Flashcards for Discrete Mathematics -->
+<div class="task-item bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-space-md" data-priority="low" data-subject="MATH210" data-type="Assignment">
+<div class="flex items-start gap-space-md">
+<div class="pt-1">
+<button class="w-5 h-5 rounded bg-surface-container-low hover:bg-primary/20 flex items-center justify-center text-transparent hover:text-primary transition-colors" onclick="toggleTaskStatus(this)">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface font-bold">MATH210</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-outline font-medium">Low Priority</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant font-medium">Study Prep</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event</span> Next Tue Feb 25
+                </span>
+</div>
+<h3 class="task-title font-title-md text-title-md text-on-surface font-bold">Prepare Flashcards for Discrete Mathematics Quiz 2</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Set theory, Pigeonhole Principle formulas, and modular arithmetic identities.</p>
+</div>
+</div>
+<div class="flex items-center justify-between lg:justify-end gap-space-md pl-8 lg:pl-0">
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed-variant hover:bg-tertiary font-label-md text-label-md transition-colors" onclick="showToast('AI Flashcards generated for MATH210!')">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span> AI Generate
+              </button>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Motivational Completed Today State Card -->
+<div class="bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low p-space-lg rounded-2xl flex flex-col md:flex-row items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[32px]">military_tech</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">3 tasks completed today!</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Velocity +14%</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">You're completely on track for your weekly goal. Keep the study momentum going into the evening sprint.</p>
+</div>
+</div>
+<button class="px-space-lg py-2.5 rounded-xl bg-primary text-on-primary font-title-md text-title-md hover:bg-primary-container transition-all flex items-center gap-2 flex-shrink-0 shadow-sm" onclick="startPomodoro('Quick Sprint')">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+<span>Start 25m Pomodoro</span>
+</button>
+</div>
+<!-- 3. COMPLETED SECTION (Collapsible & Muted) -->
+<section class="flex flex-col gap-space-md">
+<button class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors w-full text-left" onclick="toggleCompletedSection()">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">check_circle</span>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Completed Submissions & Archives</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-tabular-data text-label-sm font-semibold">14 total</span>
+</div>
+<div class="flex items-center gap-2 text-outline">
+<span class="font-label-md text-label-md">Toggle archive</span>
+<span class="material-symbols-outlined text-[20px] transition-transform" id="completedChevron">expand_more</span>
+</div>
+</button>
+<div class="flex flex-col gap-space-xs transition-all" id="completedTasksList">
+<!-- Completed Task 1 -->
+<div class="bg-surface-container-lowest/80 p-space-md rounded-xl flex items-center justify-between gap-space-md opacity-80 hover:opacity-100 transition-opacity">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="line-through font-title-md text-title-md text-on-surface-variant font-medium">Binary Search Tree Iterative vs Recursive Traversal</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">CS301</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Completed Yesterday · Grade: 98/100 (Full Test Vectors Passed)</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-tabular-data text-label-md font-bold">98% Grade</span>
+</div>
+<!-- Completed Task 2 -->
+<div class="bg-surface-container-lowest/80 p-space-md rounded-xl flex items-center justify-between gap-space-md opacity-80 hover:opacity-100 transition-opacity">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="line-through font-title-md text-title-md text-on-surface-variant font-medium">ER Diagram for Hospital Management Database</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">CS315</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Completed Feb 15 · Verified Crow's Foot Notation & Cardinality constraints</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-tabular-data text-label-md font-medium">Submitted</span>
+</div>
+<!-- Completed Task 3 -->
+<div class="bg-surface-container-lowest/80 p-space-md rounded-xl flex items-center justify-between gap-space-md opacity-80 hover:opacity-100 transition-opacity">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="line-through font-title-md text-title-md text-on-surface-variant font-medium">Linear Algebra Matrix Eigenvalues Practice</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">MATH240</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Completed Feb 14 · SVD Decomposition proofs verified</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-tabular-data text-label-md font-medium">Submitted</span>
+</div>
+</div>
+</section>
+</div>
+<!-- KANBAN BOARD CONTAINER (Hidden by default, activated via Toggle) -->
+<div class="hidden grid grid-cols-1 md:grid-cols-3 gap-space-lg w-full" id="kanbanViewContainer">
+<!-- To-Do Column -->
+<div class="flex flex-col gap-space-md bg-surface-container-low p-space-md rounded-2xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-outline"></span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Backlog / Next</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">2</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-2">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high self-start text-on-surface font-bold">MATH210</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Discrete Math Quiz 2 Flashcards</h4>
+<span class="font-body-sm text-body-sm text-outline">Est: 1.0 hr</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-2">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-fixed self-start text-on-secondary-fixed font-bold">CS315</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Read Chapter 8: B-Trees</h4>
+<span class="font-body-sm text-body-sm text-outline">DDIA 34 pages</span>
+</div>
+</div>
+</div>
+<!-- In Progress Column -->
+<div class="flex flex-col gap-space-md bg-surface-container-low p-space-md rounded-2xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary animate-pulse"></span>
+<span class="font-title-md text-title-md text-on-surface font-bold">In Active Sprint</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">4</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-2">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed self-start text-on-primary-fixed-variant font-bold">CS301</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Red-Black Tree Visualizer</h4>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full" style="width: 75%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-error font-bold">Due Tomorrow</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-2">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-fixed self-start text-on-secondary-fixed font-bold">CS315</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Postgres Indexing Benchmark</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Due Thu Feb 20</span>
+</div>
+</div>
+</div>
+<!-- Done Column -->
+<div class="flex flex-col gap-space-md bg-surface-container-low p-space-md rounded-2xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Delivered / Graded</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-bold">14</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-2 opacity-90">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed self-start text-on-primary-fixed-variant font-bold">CS301</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold line-through">BST Traversal Tests</h4>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Score: 98/100</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Slide-over / Modal for Creating New Task -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-inverse-surface/60 backdrop-blur-sm" id="createTaskModal">
+<div class="bg-surface-container-lowest rounded-2xl shadow-2xl w-full max-w-xl overflow-hidden flex flex-col max-h-[921px]">
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">add_circle</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Create New Academic Task</h3>
+</div>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high text-outline hover:text-on-surface flex items-center justify-center" onclick="closeTaskModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg overflow-y-auto flex flex-col gap-space-md">
+<!-- Title Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Task Title / Assignment Name *</label>
+<input class="px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40" id="newTaskTitle" placeholder="e.g. Implement Dijkstra Shortest Path Algorithm" type="text"/>
+</div>
+<!-- Subject & Priority Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Academic Course / Subject *</label>
+<select class="px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40" id="newTaskSubject">
+<option value="CS301">CS301: Data Structures</option>
+<option value="CS315">CS315: DBMS Engines</option>
+<option value="CS320">CS320: Python & Data Science</option>
+<option value="MATH240">MATH240: Statistics</option>
+<option value="MATH210">MATH210: Discrete Math</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Priority Level *</label>
+<select class="px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40" id="newTaskPriority">
+<option value="high">High Priority</option>
+<option selected="" value="medium">Medium Priority</option>
+<option value="low">Low Priority</option>
+</select>
+</div>
+</div>
+<!-- Due Date & Duration -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Submission Deadline *</label>
+<input class="px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40" type="datetime-local"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Estimated Study Hours</label>
+<input class="px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40" placeholder="e.g. 2.5" step="0.5" type="number"/>
+</div>
+</div>
+<!-- Tag Selection -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Category / Workload Type</label>
+<div class="flex flex-wrap gap-2">
+<button class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm" type="button">Coding Project</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm" type="button">Lab Report</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm" type="button">Homework</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm" type="button">Reading</button>
+</div>
+</div>
+<!-- Notes / Rubric Link -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Assignment Rubric & AI Notes</label>
+<textarea class="px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40 resize-none" placeholder="Paste grading rubric link or specific requirements..." rows="3"></textarea>
+</div>
+</div>
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-colors" onclick="closeTaskModal()">Cancel</button>
+<button class="px-space-lg py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md transition-all shadow-sm" onclick="submitNewTask()">Save & Track Task</button>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="hidden fixed bottom-6 right-6 z-50 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-sm transform transition-all duration-300" id="toastNotification">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">info</span>
+<span class="font-body-sm text-body-sm font-medium" id="toastMessage">Notification message</span>
+</div>
+</div>
+<!-- Vanilla JS for Fluid Micro-Interactions -->
+<script>
+  function toggleView(viewType) {
+    const listBtn = document.getElementById('viewToggleList');
+    const kanbanBtn = document.getElementById('viewToggleKanban');
+    const listView = document.getElementById('listViewContainer');
+    const kanbanView = document.getElementById('kanbanViewContainer');
+
+    if (viewType === 'kanban') {
+      listView.classList.add('hidden');
+      kanbanView.classList.remove('hidden');
+      kanbanBtn.className = "flex items-center gap-1.5 px-space-md py-1.5 rounded-md font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm transition-all";
+      listBtn.className = "flex items-center gap-1.5 px-space-md py-1.5 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all";
+    } else {
+      kanbanView.classList.add('hidden');
+      listView.classList.remove('hidden');
+      listBtn.className = "flex items-center gap-1.5 px-space-md py-1.5 rounded-md font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm transition-all";
+      kanbanBtn.className = "flex items-center gap-1.5 px-space-md py-1.5 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all";
+    }
+  }
+
+  function toggleDropdown(id) {
+    const el = document.getElementById(id);
+    el.classList.toggle('hidden');
+  }
+
+  function toggleCompletedSection() {
+    const section = document.getElementById('completedTasksList');
+    const chevron = document.getElementById('completedChevron');
+    section.classList.toggle('hidden');
+    chevron.classList.toggle('rotate-180');
+  }
+
+  function toggleTaskStatus(btn) {
+    const card = btn.closest('.task-item');
+    const title = card.querySelector('.task-title');
+    const isCompleted = title.classList.toggle('line-through');
+    
+    if (isCompleted) {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span>';
+      btn.classList.add('bg-primary', 'text-on-primary');
+      btn.classList.remove('bg-surface-container-low', 'text-transparent');
+      showToast('Task marked as completed!');
+    } else {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span>';
+      btn.classList.remove('bg-primary', 'text-on-primary');
+      btn.classList.add('bg-surface-container-low', 'text-transparent');
+      showToast('Task moved back to pending');
+    }
+  }
+
+  function filterTasks() {
+    const searchVal = document.getElementById('taskSearchInput').value.toLowerCase();
+    const subjectVal = document.getElementById('subjectFilter').value;
+    const priorityVal = document.getElementById('priorityFilter').value;
+    const typeVal = document.getElementById('typeFilter').value;
+    const cards = document.querySelectorAll('.task-item');
+
+    cards.forEach(card => {
+      const title = card.querySelector('.task-title').innerText.toLowerCase();
+      const subject = card.getAttribute('data-subject') || '';
+      const priority = card.getAttribute('data-priority') || '';
+      const type = card.getAttribute('data-type') || '';
+
+      const matchesSearch = title.includes(searchVal);
+      const matchesSubject = subjectVal === 'all' || subject === subjectVal;
+      const matchesPriority = priorityVal === 'all' || priority === priorityVal;
+      const matchesType = typeVal === 'all' || type === typeVal;
+
+      if (matchesSearch && matchesSubject && matchesPriority && matchesType) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function resetFilters() {
+    document.getElementById('taskSearchInput').value = '';
+    document.getElementById('subjectFilter').value = 'all';
+    document.getElementById('priorityFilter').value = 'all';
+    document.getElementById('typeFilter').value = 'all';
+    filterTasks();
+    showToast('Filters cleared');
+  }
+
+  function openTaskModal() {
+    document.getElementById('createTaskModal').classList.remove('hidden');
+  }
+
+  function closeTaskModal() {
+    document.getElementById('createTaskModal').classList.add('hidden');
+  }
+
+  function submitNewTask() {
+    const title = document.getElementById('newTaskTitle').value;
+    if (!title) {
+      alert('Please specify a task title.');
+      return;
+    }
+    closeTaskModal();
+    showToast(`Task '${title}' created successfully!`);
+    document.getElementById('newTaskTitle').value = '';
+  }
+
+  function startPomodoro(taskName) {
+    showToast(`Timer focused on: ${taskName} (25 min sprint active)`);
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('toastNotification');
+    const msg = document.getElementById('toastMessage');
+    msg.innerText = message;
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 3200);
+  }
+
+  // Dismiss dropdowns if clicked outside
+  window.addEventListener('click', function(e) {
+    const bulkBtn = document.getElementById('bulkActionsBtn');
+    const bulkMenu = document.getElementById('bulkMenu');
+    if (!bulkBtn.contains(e.target) && !bulkMenu.contains(e.target)) {
+      bulkMenu.classList.add('hidden');
+    }
+  });
+</script></main></div></body></html>
